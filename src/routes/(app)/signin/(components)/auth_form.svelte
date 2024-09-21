@@ -2,6 +2,7 @@
   import { Label } from "$lib/components/ui/label/index";
   import { Button } from "$lib/components/ui/button/index";
   import { Input } from "$lib/components/ui/input/index";
+  import { GitHub, Spinner } from '$lib/components/icons'
 
   import { cn } from "$lib/utils";
 
@@ -9,6 +10,10 @@
   export { className as class };
 
   let isLoading = false;
+
+
+
+
   async function onSubmit() {
     isLoading = true;
 
@@ -35,7 +40,7 @@
       </div>
       <Button type="submit" disabled={isLoading}>
         {#if isLoading}
-          <Icons.spinner class="mr-2 h-4 w-4 animate-spin" />
+          <span class="mr-2 h-4 w-4 animate-spin">⌛</span>
         {/if}
         Sign In with Email
       </Button>
@@ -53,9 +58,13 @@
   </div>
   <Button variant="outline" type="button" disabled={isLoading}>
     {#if isLoading}
-      <Icons.spinner class="mr-2 h-4 w-4 animate-spin" />
+      {#if Spinner}
+        <svelte:component this={Spinner} class="mr-2 h-4 w-4 animate-spin" />
+      {/if}
     {:else}
-      <Icons.gitHub class="mr-2 h-4 w-4" />
+      {#if GitHub}
+        <svelte:component this={GitHub} class="mr-2 h-4 w-4" />
+      {/if}
     {/if}
     GitHub
   </Button>
