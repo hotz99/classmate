@@ -1,0 +1,208 @@
+{
+  "computer_science": {
+    "year1": {
+      "semester1": [
+        {
+          "id": "1",
+          "name": "Introduction to Computer Science",
+          "year": "year1"
+        },
+        {
+          "id": "2",
+          "name": "Procedural Programming",
+          "year": "year1"
+        },
+        {
+          "id": "3",
+          "name": "Discrete Mathematics",
+          "year": "year1"
+        },
+        {
+          "id": "4",
+          "name": "Objects in Programming",
+          "year": "year1"
+        },
+        {
+          "id": "5",
+          "name": "Logic",
+          "year": "year1"
+        },
+        {
+          "id": "6",
+          "name": "Calculus",
+          "year": "year1"
+        }
+      ],
+      "semester2": [
+        {
+          "id": "7",
+          "name": "Data Structures and Algorithms",
+          "year": "year1"
+        },
+        {
+          "id": "8",
+          "name": "Linear Algebra",
+          "year": "year1"
+        },
+        {
+          "id": "9",
+          "name": "Object-Oriented Modelling",
+          "year": "year1"
+        },
+        {
+          "id": "10",
+          "name": "Database Architectures",
+          "year": "year1"
+        },
+        {
+          "id": "11",
+          "name": "Statistics",
+          "year": "year1"
+        },
+        {
+          "id": "12",
+          "name": "Algorithmic Design",
+          "year": "year1"
+        }
+      ]
+    },
+    "year2": {
+      "semester1": [
+        {
+          "id": "13",
+          "name": "Computer Networks",
+          "year": "year2"
+        },
+        {
+          "id": "14",
+          "name": "Introduction to AI",
+          "year": "year2"
+        },
+        {
+          "id": "15",
+          "name": "Intelligent User Interfaces",
+          "year": "year2"
+        },
+        {
+          "id": "16",
+          "name": "Software Engineering and Architectures",
+          "year": "year2"
+        },
+        {
+          "id": "17",
+          "name": "Principles of Programming Languages",
+          "year": "year2"
+        },
+        {
+          "id": "18",
+          "name": "Image & Video Processing",
+          "year": "year2"
+        },
+        {
+          "id": "19",
+          "name": "AL & ML",
+          "year": "year2"
+        }
+      ],
+      "semester2": [
+        {
+          "id": "20",
+          "name": "Embedded Programming",
+          "year": "year2"
+        },
+        {
+          "id": "21",
+          "name": "Computer Security",
+          "year": "year2"
+        },
+        {
+          "id": "22",
+          "name": "Parallel Programming",
+          "year": "year2"
+        },
+        {
+          "id": "23",
+          "name": "IT Management & Privacy",
+          "year": "year2"
+        },
+        {
+          "id": "24",
+          "name": "Numerical Methods",
+          "year": "year2"
+        },
+        {
+          "id": "25",
+          "name": "High Performance Computing",
+          "year": "year2"
+        },
+        {
+          "id": "26",
+          "name": "Information Security",
+          "year": "year2"
+        },
+        {
+          "id": "27",
+          "name": "Cybersecurity & IoT",
+          "year": "year2"
+        }
+      ]
+    },
+    "year3": {
+      "semester1": [
+        {
+          "id": "28",
+          "name": "Computer Simulations",
+          "year": "year3"
+        },
+        {
+          "id": "29",
+          "name": "Real-Time Programming",
+          "year": "year3"
+        },
+        {
+          "id": "30",
+          "name": "Computer Graphics",
+          "year": "year3"
+        },
+        {
+          "id": "31",
+          "name": "Quantum Computing",
+          "year": "year3"
+        },
+        {
+          "id": "32",
+          "name": "Robotics",
+          "year": "year3"
+        },
+        {
+          "id": "33",
+          "name": "Bio-Informatics",
+          "year": "year3"
+        },
+        {
+          "id": "34",
+          "name": "IT Startups",
+          "year": "year3"
+        }
+      ],
+      "semester2": [
+        {
+          "id": "35",
+          "name": "Operating Systems",
+          "year": "year3"
+        },
+        {
+          "id": "36",
+          "name": "Ethics and Philosophy for Computer Science",
+          "year": "year3"
+        },
+        {
+          "id": "37",
+          "name": "Theoretical Computer Science",
+          "year": "year3"
+        }
+      ]
+    }
+  }
+}
+
