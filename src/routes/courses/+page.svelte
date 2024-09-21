@@ -4,7 +4,8 @@
   import { Input } from "$lib/components/ui/input";
   import * as Tabs from "$lib/components/ui/tabs";
   import { Button } from "$lib/components/ui/button";
-  import type { Course, Courses } from "./types";
+  import { ArrowRight } from "lucide-svelte";
+  import type { Course, Courses } from "$lib/types";
 
   export let data: PageData;
 
@@ -24,7 +25,7 @@
   );
 </script>
 
-<div class="w-1/3 mx-auto mt-4 space-y-4">
+<div class="mx-auto mt-2 space-y-10">
   <div class="flex flex-col space-y-2">
     <Input placeholder="Search ..." bind:value={searchInput} />
 
@@ -55,7 +56,7 @@
       >
         <h2>{course.name}</h2>
         <Button class="ml-auto" on:click={() => goto(`/courses/${course.id}`)}>
-          View
+          <ArrowRight />
         </Button>
       </div>
     {/each}

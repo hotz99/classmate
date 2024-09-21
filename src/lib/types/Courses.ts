@@ -1,8 +1,4 @@
-export interface Course {
-  id: string;
-  name: string;
-  year: "year1" | "year2" | "year3";
-}
+import type { Course } from "./Course";
 
 export interface Courses {
   computer_science: {

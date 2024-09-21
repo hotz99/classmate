@@ -3,11 +3,11 @@
 // keep data loading server side
 // filter, sort, etc. done client side
 
-import type { PageLoad } from "./$types";
 import courses from "$lib/data/courses.json";
+import type { Courses } from "$lib/types";
 
 export const load: PageLoad = async () => {
   return {
-    courses
+    courses: courses as Courses
   };
-};
+}
