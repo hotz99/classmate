@@ -1,23 +1,61 @@
-<script>
+<script lang="ts">
   import "../app.css";
+  import {
+    selectedTagStore,
+    hasAddedFileStore,
+    hasAddedAbstractStore,
+    submissionTitleStore,
+  } from "$lib/stores";
   import { page } from "$app/stores";
   import { goto } from "$app/navigation";
   import { Button } from "$lib/components/ui/button/index";
+  import { Label } from "$lib/components/ui/label";
   import {
     Upload,
+    ArrowRight,
     Undo2,
     Settings,
     LogOut,
     CircleUserRound,
   } from "lucide-svelte";
+
+  const excludedPathsForButton = ["/courses", "/sign_in"];
+  const excludedPathsForNavgrid = ["/sign_in", "/submit"];
+
+  function handleUndo() {
+    selectedTagStore.set(null);
+    hasAddedFileStore.set(false);
+    hasAddedAbstractStore.set(false);
+    goto("/courses");
+  }
+
+  let fileInput: HTMLInputElement | null = null;
+  let selectedFile: File | null = null;
+
+  function handleFileChange() {
+    if (fileInput && fileInput.files.length > 0) {
+      selectedFile = fileInput.files[0];
+      console.log("selected file:", selectedFile);
+      hasAddedFileStore.set(true);
+    }
+  }
 </script>
 
-<main class="flex flex-col min-h-screen p-4">
-  {#if $page.url.pathname !== "/courses" && $page.url.pathname !== "/sign_in"}
-    <Button class="w-16" on:click={() => goto("/courses")}><Undo2 /></Button>
+<main class="flex flex-col min-h-screen p-4 space-y-8">
+  {#if !excludedPathsForButton.includes($page.url.pathname)}
+    <div class="flex flex-row justify-between">
+      <Button on:click={handleUndo}><Undo2 /></Button>
+      {#if $page.url.pathname === "/submit"}
+        <Button
+          on:click={() => goto(`/submit/finish`)}
+          disabled={!($hasAddedFileStore && $hasAddedAbstractStore)}
+          ><ArrowRight /></Button
+        >
+      {/if}
+    </div>
   {/if}
   <div class="flex-grow"><slot /></div>
-  {#if $page.url.pathname && $page.url.pathname !== "/sign_in"}
+  {#if !excludedPathsForNavgrid.includes($page.url.pathname)}
     <div class="flex flex-row self-end">
       <div class="grid grid-cols-2 gap-2">
         <Button on:click={() => goto("/submit")}>
@@ -27,6 +65,16 @@
         <Button on:click={() => goto("/settings")}><Settings /></Button>
         <Button on:click={() => goto("/sign_in")}><LogOut /></Button>
       </div>
+    </div>
+  {:else if $page.url.pathname === "/submit"}
+    <div class="grid w-full items-center gap-2">
+      <Label class="text-2xl" for="submissionFile">Add file</Label>
+      <input
+        id="submissionFile"
+        type="file"
+        bind:this={fileInput}
+        on:change={handleFileChange}
+      />
     </div>
   {/if}
 </main>

@@ -45,7 +45,6 @@
     <Input placeholder="Title" bind:value={titleFilter} />
   </div>
 
-  
   <div class="flex flex-col">
     <Input
       placeholder="Rating"
@@ -66,7 +65,6 @@
       <p class="text-red-500 text-sm mt-1">{studentIdError}</p>
     {/if}
   </div>
-
 
   <div class="flex flex-col">
     <Input

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { Input } from "$lib/components/ui/input";
   import { goto } from "$app/navigation";
   import { Button } from "$lib/components/ui/button";
   import { ArrowRight } from "lucide-svelte";
@@ -37,7 +36,7 @@
 
 <div class="mx-auto">
   {#if selectedCourse}
-    <h1 class="mt-8 text-4xl">{selectedCourse.name}</h1>
+    <h1 class="text-4xl">{selectedCourse.name}</h1>
     <p>Year {selectedCourse.year}, Semester {selectedCourse.semester}</p>
     <div class="mt-8">
       <SubmissionFilters
@@ -48,7 +47,7 @@
       />
     </div>
 
-    <div class="mt-2 flex flex-col justify-between space-y-2">
+    <div class="mt-8 flex flex-col justify-between space-y-2">
       {#each filteredSubmissions as submission}
         <div
           class="flex flex-row justify-between items-center px-4 py-2 border rounded"

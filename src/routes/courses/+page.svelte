@@ -5,19 +5,15 @@
   import * as Tabs from "$lib/components/ui/tabs";
   import { Button } from "$lib/components/ui/button";
   import { ArrowRight } from "lucide-svelte";
-  import { selectedCourseStore } from "$lib/stores";
+  import { coursesStore, selectedCourseStore } from "$lib/stores";
 
   import type { Course, Courses } from "$lib/types";
-
-  export let data: PageData;
-
-  let courses: Courses = data.courses;
 
   let searchInput: string = "";
   let activeYear: string = "year1";
   let activeSemester: string = "semester1";
 
-  $: filteredCourses = (courses[activeYear][activeSemester] || []).filter(
+  $: filteredCourses = ($coursesStore[activeYear][activeSemester] || []).filter(
     (course: Course) => {
       const matchesSearch = course.name
         .toLowerCase()
@@ -33,7 +29,7 @@
   }
 </script>
 
-<div class="mx-auto mt-2 space-y-10">
+<div class="mx-auto space-y-10">
   <div class="flex flex-col space-y-2">
     <Input placeholder="Search ..." bind:value={searchInput} />
 
