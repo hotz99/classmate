@@ -1,24 +1,50 @@
 <script lang="ts">
-  import type { PageData } from "./$types";
-  import type { Course } from "$lib/types";
-  import { coursesStore } from "$lib/stores";
+  import { goto } from "$app/navigation";
+  import { Button } from "$lib/components/ui/button";
+  import { ArrowRight } from "lucide-svelte";
+  import type { Course, Submission } from "$lib/types";
+  import { page } from "$app/stores";
+  import { coursesStore, selectedSubmissionStore } from "$lib/stores";
 
-  $: selectedCourseStore;
+  let slug: string;
+  let selectedCourse: Course | null = null;
 
-  export let data: PageData;
+  $: {
+    slug = $page.params.slug;
+    selectedCourse = Object.values($coursesStore)
+      .flatMap((semester) => Object.values(semester).flat())
+      .find((c) => c.id === slug);
 
-  let filteredCourse: Course;
+    console.log(selectedCourse);
+  }
 
-  $: if ($coursesStore) {
-    filteredCourse = Object.values($coursesStore.computer_science)
-      .flatMap((year) => Object.values(year).flat())
-      .find((course) => course.id === data.courseId);
+  function loadSubmission(courseId: string, submission: Submission) {
+    $selectedSubmissionStore.set(submission);
+    goto(`/courses/${courseId}/submissions/${submission.id}`);
   }
 </script>
 
-{#if filteredCourse}
-  <h1>{filteredCourse.name}</h1>
-  <p>{filteredCourse.year}</p>
-{:else}
-  <h1>Course not found</h1>
-{/if}
+<div class="mx-auto">
+  {#if selectedCourse}
+    <h1 class="mt-4 text-4xl">{selectedCourse.name}</h1>
+    <p>Year {selectedCourse.year} / Semester {selectedCourse.semester}</p>
+    <div class="flex flex-col justify-between space-y-2">
+      {#each selectedCourse.submissions as submission}
+        <div class="mx-auto border rounded">
+          <h2 class="text-xl">{submission.title}</h2>
+          <h2 class="text-sm">{submission.author.studentId}</h2>
+          <Button
+            class="ml-auto"
+            on:click={() => loadSubmission(selectedCourse.id, submission)}
+          >
+            <ArrowRight />
+          </Button>
+        </div>
+      {/each}
+    </div>
+  {:else}
+    <h1 class="mt-4 text-4xl">
+      404: Course with ID {slug} not found.
+    </h1>
+  {/if}
+</div>

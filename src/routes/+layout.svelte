@@ -14,7 +14,7 @@
 
 <main class="flex flex-col min-h-screen p-4">
   {#if $page.url.pathname !== "/courses" && $page.url.pathname !== "/sign_in"}
-    <Button on:click={() => goto("/courses")}><Undo2 /></Button>
+    <Button class="w-16" on:click={() => goto("/courses")}><Undo2 /></Button>
   {/if}
   <div class="flex-grow"><slot /></div>
   {#if $page.url.pathname && $page.url.pathname !== "/sign_in"}

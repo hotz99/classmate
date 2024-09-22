@@ -3,6 +3,7 @@
 // keep data loading server side
 // filter, sort, etc. done client side
 
+import type { PageLoad } from "./$types";
 import courses from "$lib/data/courses.json";
 import type { Courses } from "$lib/types";
 

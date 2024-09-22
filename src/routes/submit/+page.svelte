@@ -1,1 +1,1 @@
-<h1>Submissions page</h1>
+<h1>Submit page</h1>

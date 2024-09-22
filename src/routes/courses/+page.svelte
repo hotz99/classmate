@@ -5,11 +5,13 @@
   import * as Tabs from "$lib/components/ui/tabs";
   import { Button } from "$lib/components/ui/button";
   import { ArrowRight } from "lucide-svelte";
+  import { selectedCourseStore } from "$lib/stores";
+
   import type { Course, Courses } from "$lib/types";
 
   export let data: PageData;
 
-  let courses: Courses = data.courses.computer_science;
+  let courses: Courses = data.courses;
 
   let searchInput: string = "";
   let activeYear: string = "year1";
@@ -23,6 +25,11 @@
       return matchesSearch;
     },
   );
+
+  function loadCourse(course: Course) {
+    $selectedCourseStore.set(course);
+    goto(`/courses/${course.id}`);
+  }
 </script>
 
 <div class="mx-auto mt-2 space-y-10">
@@ -55,7 +62,7 @@
         class="flex flex-row justify-between items-center px-4 py-2 border rounded"
       >
         <h2>{course.name}</h2>
-        <Button class="ml-auto" on:click={() => goto(`/courses/${course.id}`)}>
+        <Button class="ml-auto" on:click={() => loadCourse(course)}>
           <ArrowRight />
         </Button>
       </div>

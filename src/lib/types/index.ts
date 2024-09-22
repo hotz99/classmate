@@ -1,7 +1,9 @@
-import { Course } from "./Course";
-import { Courses } from "./Courses";
+import type { Course } from "./Course";
+import type { Courses } from "./Courses";
+import type { Submission } from "./Submission";
 
-export {
+export type {
   Course,
-  Courses
+  Courses,
+  Submission
 }
