@@ -1,5 +1,3 @@
-import type { Course } from "./Course";
-
 export interface Submission {
   id: number;
   title: string;
@@ -8,7 +6,8 @@ export interface Submission {
     lastName: string;
     studentId: string;
   };
-  rating: number;
   date: string;
+  rating: number;
+  academicYear: number;
   courseId: string;
 }

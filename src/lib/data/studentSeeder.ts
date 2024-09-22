@@ -1,5 +1,5 @@
-import type { Course, Courses, Submission } from "../types";
-import courses from "./courses.json" assert { type: "json" };
+import type { Course, Submission } from "../types";
+import courses from "./courses.json" with { type: "json" };
 import fs from "node:fs";
 
 // Sample names to generate random authors
@@ -22,6 +22,11 @@ function generateStudentId(): string {
 // Generate a random rating between 1 and 5
 function generateRating(): number {
   return Math.floor(Math.random() * 5) + 1;
+}
+
+// Generate a random academic year between 2018 and 2024
+function generateAcademicYear(): number {
+  return Math.floor(Math.random() * (2024 - 2018 + 1)) + 2018;
 }
 
 // Generate a random date within the past 2 years
@@ -50,6 +55,7 @@ function generateSubmission(courseId: string): Submission {
     },
     rating: generateRating(),
     date: generateRandomDate(),
+    academicYear: generateAcademicYear(), // Add academic year
     courseId: courseId,
   };
 }
@@ -62,34 +68,21 @@ function populateCourseWithSubmissions(course: Course, nSubmissions: number): Co
 }
 
 // Iterate over all courses and populate each with submissions
-function populateAllCourses(courses: Courses, nSubmissions: number): Courses {
-  if (!courses || typeof courses !== 'object') {
-    throw new Error('Courses data is not loaded or is invalid.');
-  }
-
+function populateAllCourses(courses: any, nSubmissions: number): any {
   Object.keys(courses).forEach(yearKey => {
-    const year = courses[yearKey as keyof Courses]; // Ensure yearKey corresponds to the expected structure
-
-    Object.keys(year).forEach(semesterKey => {
-      const semester = year[semesterKey as keyof typeof year]; // Ensure semesterKey corresponds to the expected structure
-
-      year[semesterKey] = semester.map((course: Course) =>
+    Object.keys(courses[yearKey]).forEach(semesterKey => {
+      courses[yearKey][semesterKey] = courses[yearKey][semesterKey].map((course: Course) =>
         populateCourseWithSubmissions(course, nSubmissions)
       );
     });
   });
-
   return courses;
 }
 
 // Add or update the `semester` field for each course
 function updateCoursesWithSemester(courses: any): any {
-  if (!courses || typeof courses !== 'object') {
-    throw new Error('Courses data is not loaded or is invalid.');
-  }
-
   Object.keys(courses).forEach((yearKey) => {
-    const year = courses[yearKey as keyof Courses];
+    const year = courses[yearKey];
 
     Object.keys(year).forEach((semesterKey) => {
       const semesterNumber = semesterKey === "semester1" ? "1" : "2";

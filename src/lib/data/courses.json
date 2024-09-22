@@ -9,74 +9,80 @@
         "submissions": [
           {
             "id": "0",
-            "title": "Submission 8",
+            "title": "Submission 6",
             "author": {
-              "firstName": "John",
-              "lastName": "Brown",
-              "studentId": "i0066175"
+              "firstName": "Fiona",
+              "lastName": "Wilson",
+              "studentId": "i1338734"
             },
             "rating": 1,
-            "date": "2024-09-04T21:11:08.964Z",
+            "date": "2023-01-23T20:31:12.830Z",
+            "academicYear": 2023,
             "courseId": "1"
           },
           {
             "id": "1",
-            "title": "Submission 4",
+            "title": "Submission 5",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Taylor",
-              "studentId": "i4623628"
+              "firstName": "Bob",
+              "lastName": "Johnson",
+              "studentId": "i5788561"
             },
-            "rating": 3,
-            "date": "2024-01-09T04:36:17.996Z",
+            "rating": 1,
+            "date": "2023-11-19T09:11:51.146Z",
+            "academicYear": 2018,
             "courseId": "1"
           },
           {
             "id": "2",
-            "title": "Submission 6",
+            "title": "Submission 2",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Brown",
-              "studentId": "i0397824"
+              "firstName": "Alice",
+              "lastName": "Miller",
+              "studentId": "i8034810"
             },
-            "rating": 4,
-            "date": "2023-05-16T13:09:03.245Z",
+            "rating": 2,
+            "date": "2023-12-19T02:30:36.339Z",
+            "academicYear": 2019,
             "courseId": "1"
           },
           {
             "id": "3",
-            "title": "Submission 9",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Davis",
-              "studentId": "i3527630"
+              "firstName": "Fiona",
+              "lastName": "Brown",
+              "studentId": "i7682956"
             },
-            "rating": 4,
-            "date": "2023-07-10T02:39:41.472Z",
+            "rating": 5,
+            "date": "2023-11-30T22:28:52.115Z",
+            "academicYear": 2021,
             "courseId": "1"
           },
           {
             "id": "4",
-            "title": "Submission 8",
+            "title": "Submission 0",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Wilson",
-              "studentId": "i6341836"
+              "firstName": "Emily",
+              "lastName": "Davis",
+              "studentId": "i5792658"
             },
-            "rating": 2,
-            "date": "2024-09-18T15:39:20.497Z",
+            "rating": 4,
+            "date": "2024-08-17T23:07:02.564Z",
+            "academicYear": 2020,
             "courseId": "1"
           },
           {
             "id": "5",
-            "title": "Submission 4",
+            "title": "Submission 5",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Taylor",
-              "studentId": "i1406591"
+              "firstName": "John",
+              "lastName": "Brown",
+              "studentId": "i2345876"
             },
-            "rating": 1,
-            "date": "2023-11-25T16:20:54.950Z",
+            "rating": 2,
+            "date": "2023-09-19T19:59:58.260Z",
+            "academicYear": 2018,
             "courseId": "1"
           }
         ]
@@ -89,74 +95,80 @@
         "submissions": [
           {
             "id": "6",
-            "title": "Submission 8",
+            "title": "Submission 4",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Smith",
-              "studentId": "i3592933"
+              "firstName": "Charlie",
+              "lastName": "Davis",
+              "studentId": "i7781335"
             },
-            "rating": 5,
-            "date": "2024-03-30T17:35:03.069Z",
+            "rating": 4,
+            "date": "2024-01-02T01:00:25.910Z",
+            "academicYear": 2023,
             "courseId": "2"
           },
           {
             "id": "7",
-            "title": "Submission 1",
+            "title": "Submission 4",
             "author": {
-              "firstName": "David",
-              "lastName": "Doe",
-              "studentId": "i3617898"
+              "firstName": "Alice",
+              "lastName": "Taylor",
+              "studentId": "i9293048"
             },
-            "rating": 3,
-            "date": "2022-11-04T12:52:15.848Z",
+            "rating": 4,
+            "date": "2023-08-04T06:46:21.169Z",
+            "academicYear": 2024,
             "courseId": "2"
           },
           {
             "id": "8",
-            "title": "Submission 9",
+            "title": "Submission 8",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Wilson",
-              "studentId": "i2662289"
+              "firstName": "Jane",
+              "lastName": "Doe",
+              "studentId": "i2734937"
             },
-            "rating": 1,
-            "date": "2024-09-09T14:33:29.945Z",
+            "rating": 3,
+            "date": "2024-01-17T01:53:58.748Z",
+            "academicYear": 2020,
             "courseId": "2"
           },
           {
             "id": "9",
-            "title": "Submission 6",
+            "title": "Submission 9",
             "author": {
-              "firstName": "David",
-              "lastName": "Johnson",
-              "studentId": "i9355691"
+              "firstName": "Bob",
+              "lastName": "Doe",
+              "studentId": "i2752055"
             },
-            "rating": 5,
-            "date": "2022-10-04T06:28:13.303Z",
+            "rating": 2,
+            "date": "2024-03-27T00:45:34.199Z",
+            "academicYear": 2021,
             "courseId": "2"
           },
           {
             "id": "10",
             "title": "Submission 1",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Johnson",
-              "studentId": "i6251760"
+              "firstName": "Bob",
+              "lastName": "Taylor",
+              "studentId": "i5716641"
             },
             "rating": 3,
-            "date": "2023-09-24T00:20:42.466Z",
+            "date": "2023-04-13T19:57:39.669Z",
+            "academicYear": 2022,
             "courseId": "2"
           },
           {
             "id": "11",
             "title": "Submission 4",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Johnson",
-              "studentId": "i5794598"
+              "firstName": "Jane",
+              "lastName": "Taylor",
+              "studentId": "i1020232"
             },
-            "rating": 3,
-            "date": "2024-09-13T07:56:54.710Z",
+            "rating": 2,
+            "date": "2023-03-14T02:50:48.912Z",
+            "academicYear": 2024,
             "courseId": "2"
           }
         ]
@@ -168,74 +180,80 @@
         "submissions": [
           {
             "id": "12",
-            "title": "Submission 1",
+            "title": "Submission 5",
             "author": {
-              "firstName": "John",
-              "lastName": "Wilson",
-              "studentId": "i2788295"
+              "firstName": "Alice",
+              "lastName": "Doe",
+              "studentId": "i7447931"
             },
-            "rating": 2,
-            "date": "2023-06-29T23:50:40.575Z",
+            "rating": 5,
+            "date": "2023-07-13T14:20:44.317Z",
+            "academicYear": 2019,
             "courseId": "3"
           },
           {
             "id": "13",
-            "title": "Submission 5",
+            "title": "Submission 8",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Wilson",
-              "studentId": "i8596137"
+              "firstName": "Jane",
+              "lastName": "Doe",
+              "studentId": "i1243842"
             },
-            "rating": 2,
-            "date": "2023-07-06T06:37:30.452Z",
+            "rating": 3,
+            "date": "2023-02-09T06:31:44.961Z",
+            "academicYear": 2018,
             "courseId": "3"
           },
           {
             "id": "14",
-            "title": "Submission 1",
+            "title": "Submission 7",
             "author": {
-              "firstName": "David",
-              "lastName": "Doe",
-              "studentId": "i7432227"
+              "firstName": "Emily",
+              "lastName": "Brown",
+              "studentId": "i7301591"
             },
-            "rating": 3,
-            "date": "2024-01-23T20:25:07.200Z",
+            "rating": 5,
+            "date": "2023-02-17T22:11:48.928Z",
+            "academicYear": 2019,
             "courseId": "3"
           },
           {
             "id": "15",
-            "title": "Submission 0",
+            "title": "Submission 1",
             "author": {
-              "firstName": "David",
-              "lastName": "Taylor",
-              "studentId": "i4267040"
+              "firstName": "John",
+              "lastName": "Brown",
+              "studentId": "i6587934"
             },
-            "rating": 5,
-            "date": "2023-02-15T05:02:15.050Z",
+            "rating": 1,
+            "date": "2022-11-14T16:07:02.085Z",
+            "academicYear": 2018,
             "courseId": "3"
           },
           {
             "id": "16",
-            "title": "Submission 3",
+            "title": "Submission 6",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Brown",
-              "studentId": "i5930865"
+              "firstName": "Fiona",
+              "lastName": "Doe",
+              "studentId": "i4233851"
             },
-            "rating": 2,
-            "date": "2023-03-11T09:40:14.907Z",
+            "rating": 5,
+            "date": "2022-12-21T21:42:57.371Z",
+            "academicYear": 2022,
             "courseId": "3"
           },
           {
             "id": "17",
-            "title": "Submission 0",
+            "title": "Submission 6",
             "author": {
-              "firstName": "David",
+              "firstName": "John",
               "lastName": "Miller",
-              "studentId": "i3248522"
+              "studentId": "i9021799"
             },
-            "rating": 3,
-            "date": "2023-02-18T11:59:09.883Z",
+            "rating": 2,
+            "date": "2022-12-04T17:13:21.990Z",
+            "academicYear": 2024,
             "courseId": "3"
           }
         ],
@@ -248,74 +266,80 @@
         "submissions": [
           {
             "id": "18",
-            "title": "Submission 0",
+            "title": "Submission 8",
             "author": {
-              "firstName": "David",
-              "lastName": "Miller",
-              "studentId": "i2655917"
+              "firstName": "Charlie",
+              "lastName": "Johnson",
+              "studentId": "i8066029"
             },
-            "rating": 1,
-            "date": "2023-01-01T12:25:21.865Z",
+            "rating": 2,
+            "date": "2022-10-17T09:29:36.727Z",
+            "academicYear": 2020,
             "courseId": "4"
           },
           {
             "id": "19",
-            "title": "Submission 3",
+            "title": "Submission 6",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Davis",
-              "studentId": "i6873074"
+              "firstName": "Fiona",
+              "lastName": "Brown",
+              "studentId": "i2802237"
             },
-            "rating": 4,
-            "date": "2023-05-01T22:35:37.685Z",
+            "rating": 1,
+            "date": "2024-03-21T23:15:36.645Z",
+            "academicYear": 2021,
             "courseId": "4"
           },
           {
             "id": "20",
-            "title": "Submission 6",
+            "title": "Submission 2",
             "author": {
               "firstName": "Bob",
               "lastName": "Miller",
-              "studentId": "i2876022"
+              "studentId": "i1195101"
             },
-            "rating": 2,
-            "date": "2023-11-10T02:50:15.938Z",
+            "rating": 1,
+            "date": "2024-08-04T09:59:21.451Z",
+            "academicYear": 2019,
             "courseId": "4"
           },
           {
             "id": "21",
-            "title": "Submission 7",
+            "title": "Submission 2",
             "author": {
               "firstName": "Alice",
-              "lastName": "Brown",
-              "studentId": "i0008455"
+              "lastName": "Johnson",
+              "studentId": "i0351896"
             },
-            "rating": 4,
-            "date": "2023-12-17T13:40:14.623Z",
+            "rating": 1,
+            "date": "2023-12-03T02:08:29.805Z",
+            "academicYear": 2021,
             "courseId": "4"
           },
           {
             "id": "22",
-            "title": "Submission 5",
+            "title": "Submission 1",
             "author": {
-              "firstName": "David",
-              "lastName": "Miller",
-              "studentId": "i4856014"
+              "firstName": "Fiona",
+              "lastName": "Smith",
+              "studentId": "i7327230"
             },
-            "rating": 2,
-            "date": "2022-11-29T04:01:01.608Z",
+            "rating": 5,
+            "date": "2023-12-05T05:19:21.492Z",
+            "academicYear": 2021,
             "courseId": "4"
           },
           {
             "id": "23",
-            "title": "Submission 2",
+            "title": "Submission 6",
             "author": {
-              "firstName": "David",
-              "lastName": "Johnson",
-              "studentId": "i5238625"
+              "firstName": "Charlie",
+              "lastName": "Doe",
+              "studentId": "i2355203"
             },
-            "rating": 1,
-            "date": "2023-07-25T06:17:26.223Z",
+            "rating": 4,
+            "date": "2024-05-29T05:12:04.784Z",
+            "academicYear": 2019,
             "courseId": "4"
           }
         ],
@@ -328,74 +352,80 @@
         "submissions": [
           {
             "id": "24",
-            "title": "Submission 0",
+            "title": "Submission 1",
             "author": {
-              "firstName": "David",
-              "lastName": "Wilson",
-              "studentId": "i4368496"
+              "firstName": "John",
+              "lastName": "Brown",
+              "studentId": "i5569960"
             },
-            "rating": 1,
-            "date": "2024-04-11T21:16:36.828Z",
+            "rating": 2,
+            "date": "2024-07-22T16:03:43.095Z",
+            "academicYear": 2022,
             "courseId": "5"
           },
           {
             "id": "25",
-            "title": "Submission 4",
+            "title": "Submission 6",
             "author": {
               "firstName": "Jane",
-              "lastName": "Davis",
-              "studentId": "i3531460"
+              "lastName": "Johnson",
+              "studentId": "i6916493"
             },
-            "rating": 3,
-            "date": "2024-06-26T08:13:23.248Z",
+            "rating": 4,
+            "date": "2023-10-23T14:13:00.485Z",
+            "academicYear": 2022,
             "courseId": "5"
           },
           {
             "id": "26",
-            "title": "Submission 5",
+            "title": "Submission 4",
             "author": {
-              "firstName": "John",
-              "lastName": "Davis",
-              "studentId": "i3563298"
+              "firstName": "Fiona",
+              "lastName": "Taylor",
+              "studentId": "i0434586"
             },
-            "rating": 5,
-            "date": "2023-03-14T10:16:35.531Z",
+            "rating": 3,
+            "date": "2023-08-14T21:45:22.126Z",
+            "academicYear": 2019,
             "courseId": "5"
           },
           {
             "id": "27",
-            "title": "Submission 6",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Doe",
-              "studentId": "i3929881"
+              "firstName": "Emily",
+              "lastName": "Johnson",
+              "studentId": "i7691300"
             },
-            "rating": 2,
-            "date": "2023-04-18T20:27:08.828Z",
+            "rating": 4,
+            "date": "2024-07-29T11:08:49.351Z",
+            "academicYear": 2018,
             "courseId": "5"
           },
           {
             "id": "28",
-            "title": "Submission 7",
+            "title": "Submission 5",
             "author": {
               "firstName": "Charlie",
-              "lastName": "Davis",
-              "studentId": "i8109773"
+              "lastName": "Smith",
+              "studentId": "i9234358"
             },
             "rating": 1,
-            "date": "2023-07-30T17:45:17.708Z",
+            "date": "2024-03-28T17:46:30.086Z",
+            "academicYear": 2021,
             "courseId": "5"
           },
           {
             "id": "29",
-            "title": "Submission 4",
+            "title": "Submission 3",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Wilson",
-              "studentId": "i9366225"
+              "firstName": "John",
+              "lastName": "Taylor",
+              "studentId": "i2773222"
             },
-            "rating": 5,
-            "date": "2023-09-12T04:25:56.580Z",
+            "rating": 2,
+            "date": "2022-12-24T07:18:43.069Z",
+            "academicYear": 2023,
             "courseId": "5"
           }
         ],
@@ -408,74 +438,80 @@
         "submissions": [
           {
             "id": "30",
-            "title": "Submission 7",
+            "title": "Submission 1",
             "author": {
-              "firstName": "John",
+              "firstName": "Fiona",
               "lastName": "Davis",
-              "studentId": "i4401877"
+              "studentId": "i2779166"
             },
-            "rating": 3,
-            "date": "2023-05-26T09:50:48.469Z",
+            "rating": 2,
+            "date": "2024-09-15T08:53:06.823Z",
+            "academicYear": 2019,
             "courseId": "6"
           },
           {
             "id": "31",
-            "title": "Submission 3",
+            "title": "Submission 8",
             "author": {
-              "firstName": "David",
-              "lastName": "Wilson",
-              "studentId": "i8257376"
+              "firstName": "Alice",
+              "lastName": "Davis",
+              "studentId": "i1525996"
             },
-            "rating": 2,
-            "date": "2023-11-06T09:01:31.559Z",
+            "rating": 3,
+            "date": "2024-09-03T06:08:08.585Z",
+            "academicYear": 2020,
             "courseId": "6"
           },
           {
             "id": "32",
             "title": "Submission 6",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Johnson",
-              "studentId": "i7031528"
+              "firstName": "David",
+              "lastName": "Smith",
+              "studentId": "i9944430"
             },
-            "rating": 4,
-            "date": "2023-12-11T02:47:20.577Z",
+            "rating": 5,
+            "date": "2024-07-06T08:43:59.779Z",
+            "academicYear": 2019,
             "courseId": "6"
           },
           {
             "id": "33",
-            "title": "Submission 9",
+            "title": "Submission 0",
             "author": {
-              "firstName": "David",
-              "lastName": "Smith",
-              "studentId": "i0123700"
+              "firstName": "Charlie",
+              "lastName": "Wilson",
+              "studentId": "i5968923"
             },
-            "rating": 1,
-            "date": "2022-09-30T12:14:58.658Z",
+            "rating": 3,
+            "date": "2023-07-28T09:24:52.112Z",
+            "academicYear": 2019,
             "courseId": "6"
           },
           {
             "id": "34",
-            "title": "Submission 4",
+            "title": "Submission 9",
             "author": {
-              "firstName": "David",
-              "lastName": "Smith",
-              "studentId": "i0395639"
+              "firstName": "Emily",
+              "lastName": "Davis",
+              "studentId": "i9109830"
             },
             "rating": 4,
-            "date": "2024-04-01T22:46:31.187Z",
+            "date": "2024-06-23T11:03:53.064Z",
+            "academicYear": 2022,
             "courseId": "6"
           },
           {
             "id": "35",
-            "title": "Submission 1",
+            "title": "Submission 2",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Taylor",
-              "studentId": "i0872950"
+              "firstName": "John",
+              "lastName": "Doe",
+              "studentId": "i6472241"
             },
-            "rating": 4,
-            "date": "2023-07-03T16:17:31.829Z",
+            "rating": 5,
+            "date": "2023-09-21T05:28:44.169Z",
+            "academicYear": 2024,
             "courseId": "6"
           }
         ],
@@ -490,74 +526,80 @@
         "submissions": [
           {
             "id": "36",
-            "title": "Submission 6",
+            "title": "Submission 4",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Johnson",
-              "studentId": "i0303707"
+              "firstName": "Alice",
+              "lastName": "Miller",
+              "studentId": "i4672280"
             },
             "rating": 3,
-            "date": "2023-10-03T09:58:37.877Z",
+            "date": "2023-09-15T08:11:31.977Z",
+            "academicYear": 2019,
             "courseId": "7"
           },
           {
             "id": "37",
-            "title": "Submission 4",
+            "title": "Submission 1",
             "author": {
               "firstName": "Alice",
-              "lastName": "Johnson",
-              "studentId": "i0440933"
+              "lastName": "Davis",
+              "studentId": "i7515798"
             },
-            "rating": 4,
-            "date": "2023-01-16T21:14:12.354Z",
+            "rating": 2,
+            "date": "2023-02-03T04:27:25.773Z",
+            "academicYear": 2022,
             "courseId": "7"
           },
           {
             "id": "38",
-            "title": "Submission 7",
+            "title": "Submission 5",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Johnson",
-              "studentId": "i5639829"
+              "firstName": "Fiona",
+              "lastName": "Brown",
+              "studentId": "i4589145"
             },
-            "rating": 2,
-            "date": "2023-08-23T03:42:47.778Z",
+            "rating": 5,
+            "date": "2024-01-26T04:38:29.888Z",
+            "academicYear": 2018,
             "courseId": "7"
           },
           {
             "id": "39",
-            "title": "Submission 7",
+            "title": "Submission 2",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Taylor",
-              "studentId": "i3522881"
+              "firstName": "Charlie",
+              "lastName": "Brown",
+              "studentId": "i1163099"
             },
-            "rating": 5,
-            "date": "2024-03-08T10:25:41.587Z",
+            "rating": 3,
+            "date": "2024-04-20T05:15:25.558Z",
+            "academicYear": 2023,
             "courseId": "7"
           },
           {
             "id": "40",
-            "title": "Submission 8",
+            "title": "Submission 0",
             "author": {
-              "firstName": "David",
+              "firstName": "John",
               "lastName": "Miller",
-              "studentId": "i0483275"
+              "studentId": "i2828682"
             },
-            "rating": 2,
-            "date": "2022-11-27T00:11:21.159Z",
+            "rating": 3,
+            "date": "2024-07-18T22:28:08.741Z",
+            "academicYear": 2019,
             "courseId": "7"
           },
           {
             "id": "41",
-            "title": "Submission 2",
+            "title": "Submission 7",
             "author": {
-              "firstName": "John",
-              "lastName": "Johnson",
-              "studentId": "i7785761"
+              "firstName": "Fiona",
+              "lastName": "Smith",
+              "studentId": "i2038208"
             },
             "rating": 4,
-            "date": "2022-10-10T21:57:32.153Z",
+            "date": "2022-10-22T12:55:41.190Z",
+            "academicYear": 2022,
             "courseId": "7"
           }
         ],
@@ -570,74 +612,80 @@
         "submissions": [
           {
             "id": "42",
-            "title": "Submission 8",
+            "title": "Submission 2",
             "author": {
-              "firstName": "John",
+              "firstName": "Emily",
               "lastName": "Wilson",
-              "studentId": "i1667436"
+              "studentId": "i9456811"
             },
-            "rating": 3,
-            "date": "2022-10-10T03:25:38.925Z",
+            "rating": 5,
+            "date": "2024-07-20T14:37:26.807Z",
+            "academicYear": 2023,
             "courseId": "8"
           },
           {
             "id": "43",
-            "title": "Submission 1",
+            "title": "Submission 2",
             "author": {
-              "firstName": "John",
-              "lastName": "Taylor",
-              "studentId": "i3955691"
+              "firstName": "Jane",
+              "lastName": "Doe",
+              "studentId": "i3350840"
             },
             "rating": 3,
-            "date": "2023-12-12T17:38:01.136Z",
+            "date": "2024-02-25T03:10:18.366Z",
+            "academicYear": 2020,
             "courseId": "8"
           },
           {
             "id": "44",
-            "title": "Submission 2",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Smith",
-              "studentId": "i2678249"
+              "firstName": "Fiona",
+              "lastName": "Doe",
+              "studentId": "i6228692"
             },
             "rating": 3,
-            "date": "2023-05-03T18:08:38.936Z",
+            "date": "2023-11-04T19:26:58.965Z",
+            "academicYear": 2019,
             "courseId": "8"
           },
           {
             "id": "45",
-            "title": "Submission 9",
+            "title": "Submission 7",
             "author": {
-              "firstName": "David",
-              "lastName": "Doe",
-              "studentId": "i3783437"
+              "firstName": "Charlie",
+              "lastName": "Taylor",
+              "studentId": "i1060058"
             },
-            "rating": 5,
-            "date": "2023-09-28T10:47:56.298Z",
+            "rating": 2,
+            "date": "2023-03-26T18:53:19.620Z",
+            "academicYear": 2019,
             "courseId": "8"
           },
           {
             "id": "46",
-            "title": "Submission 3",
+            "title": "Submission 6",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Miller",
-              "studentId": "i2692091"
+              "firstName": "John",
+              "lastName": "Taylor",
+              "studentId": "i0730974"
             },
-            "rating": 4,
-            "date": "2024-03-27T06:44:28.884Z",
+            "rating": 1,
+            "date": "2024-08-08T17:24:54.013Z",
+            "academicYear": 2023,
             "courseId": "8"
           },
           {
             "id": "47",
-            "title": "Submission 5",
+            "title": "Submission 9",
             "author": {
-              "firstName": "John",
-              "lastName": "Miller",
-              "studentId": "i7472360"
+              "firstName": "David",
+              "lastName": "Doe",
+              "studentId": "i3560693"
             },
             "rating": 1,
-            "date": "2024-08-30T05:24:46.844Z",
+            "date": "2023-03-23T13:43:00.855Z",
+            "academicYear": 2023,
             "courseId": "8"
           }
         ],
@@ -650,74 +698,80 @@
         "submissions": [
           {
             "id": "48",
-            "title": "Submission 9",
+            "title": "Submission 8",
             "author": {
-              "firstName": "David",
+              "firstName": "Jane",
               "lastName": "Wilson",
-              "studentId": "i9247833"
+              "studentId": "i7378601"
             },
-            "rating": 4,
-            "date": "2024-03-15T14:44:30.495Z",
+            "rating": 1,
+            "date": "2024-07-26T05:40:19.451Z",
+            "academicYear": 2024,
             "courseId": "9"
           },
           {
             "id": "49",
             "title": "Submission 9",
             "author": {
-              "firstName": "David",
-              "lastName": "Taylor",
-              "studentId": "i3987899"
+              "firstName": "John",
+              "lastName": "Wilson",
+              "studentId": "i5703348"
             },
-            "rating": 2,
-            "date": "2023-08-30T00:52:48.509Z",
+            "rating": 5,
+            "date": "2024-06-21T01:05:32.442Z",
+            "academicYear": 2023,
             "courseId": "9"
           },
           {
             "id": "50",
-            "title": "Submission 4",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Emily",
+              "firstName": "Charlie",
               "lastName": "Miller",
-              "studentId": "i7996184"
+              "studentId": "i8801252"
             },
-            "rating": 2,
-            "date": "2023-05-06T01:24:06.545Z",
+            "rating": 1,
+            "date": "2023-06-09T19:50:03.620Z",
+            "academicYear": 2018,
             "courseId": "9"
           },
           {
             "id": "51",
-            "title": "Submission 5",
+            "title": "Submission 9",
             "author": {
               "firstName": "John",
-              "lastName": "Brown",
-              "studentId": "i2325388"
+              "lastName": "Smith",
+              "studentId": "i9069544"
             },
-            "rating": 4,
-            "date": "2023-07-19T06:39:41.358Z",
+            "rating": 5,
+            "date": "2024-08-27T20:58:41.321Z",
+            "academicYear": 2020,
             "courseId": "9"
           },
           {
             "id": "52",
-            "title": "Submission 9",
+            "title": "Submission 3",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Miller",
-              "studentId": "i9814839"
+              "firstName": "Fiona",
+              "lastName": "Smith",
+              "studentId": "i3323175"
             },
-            "rating": 1,
-            "date": "2023-04-20T22:15:38.305Z",
+            "rating": 2,
+            "date": "2022-09-29T22:44:52.722Z",
+            "academicYear": 2018,
             "courseId": "9"
           },
           {
             "id": "53",
-            "title": "Submission 1",
+            "title": "Submission 0",
             "author": {
-              "firstName": "David",
-              "lastName": "Miller",
-              "studentId": "i1321408"
+              "firstName": "Jane",
+              "lastName": "Smith",
+              "studentId": "i8425853"
             },
-            "rating": 2,
-            "date": "2023-02-01T02:53:23.619Z",
+            "rating": 4,
+            "date": "2022-11-22T06:29:55.416Z",
+            "academicYear": 2019,
             "courseId": "9"
           }
         ],
@@ -730,74 +784,80 @@
         "submissions": [
           {
             "id": "54",
-            "title": "Submission 7",
+            "title": "Submission 1",
             "author": {
               "firstName": "Jane",
-              "lastName": "Miller",
-              "studentId": "i5345842"
+              "lastName": "Johnson",
+              "studentId": "i1395477"
             },
             "rating": 1,
-            "date": "2023-11-17T17:23:26.183Z",
+            "date": "2024-08-29T13:49:55.317Z",
+            "academicYear": 2020,
             "courseId": "10"
           },
           {
             "id": "55",
-            "title": "Submission 6",
+            "title": "Submission 0",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Wilson",
-              "studentId": "i5627277"
+              "firstName": "Alice",
+              "lastName": "Smith",
+              "studentId": "i2700710"
             },
-            "rating": 2,
-            "date": "2023-03-20T05:13:13.583Z",
+            "rating": 4,
+            "date": "2024-03-15T09:16:00.665Z",
+            "academicYear": 2018,
             "courseId": "10"
           },
           {
             "id": "56",
-            "title": "Submission 9",
+            "title": "Submission 7",
             "author": {
-              "firstName": "David",
-              "lastName": "Brown",
-              "studentId": "i4450104"
+              "firstName": "Alice",
+              "lastName": "Davis",
+              "studentId": "i3925992"
             },
             "rating": 2,
-            "date": "2024-04-30T07:32:20.055Z",
+            "date": "2024-05-27T06:56:38.114Z",
+            "academicYear": 2021,
             "courseId": "10"
           },
           {
             "id": "57",
-            "title": "Submission 3",
+            "title": "Submission 0",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Johnson",
-              "studentId": "i4550044"
+              "firstName": "Emily",
+              "lastName": "Wilson",
+              "studentId": "i5719476"
             },
-            "rating": 4,
-            "date": "2022-10-24T14:43:18.977Z",
+            "rating": 1,
+            "date": "2024-06-11T11:59:24.131Z",
+            "academicYear": 2023,
             "courseId": "10"
           },
           {
             "id": "58",
-            "title": "Submission 9",
+            "title": "Submission 0",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Davis",
-              "studentId": "i9387052"
+              "firstName": "Charlie",
+              "lastName": "Miller",
+              "studentId": "i2922450"
             },
             "rating": 2,
-            "date": "2023-05-26T16:42:48.196Z",
+            "date": "2023-12-21T08:59:36.548Z",
+            "academicYear": 2019,
             "courseId": "10"
           },
           {
             "id": "59",
-            "title": "Submission 1",
+            "title": "Submission 4",
             "author": {
               "firstName": "Charlie",
               "lastName": "Brown",
-              "studentId": "i8891175"
+              "studentId": "i7197098"
             },
-            "rating": 5,
-            "date": "2024-02-16T04:20:51.021Z",
+            "rating": 4,
+            "date": "2023-12-29T01:01:19.337Z",
+            "academicYear": 2018,
             "courseId": "10"
           }
         ],
@@ -810,74 +870,80 @@
         "submissions": [
           {
             "id": "60",
-            "title": "Submission 7",
+            "title": "Submission 8",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Wilson",
-              "studentId": "i6041225"
+              "firstName": "Emily",
+              "lastName": "Johnson",
+              "studentId": "i1407723"
             },
-            "rating": 3,
-            "date": "2024-02-17T08:23:57.700Z",
+            "rating": 4,
+            "date": "2023-03-06T16:53:46.914Z",
+            "academicYear": 2018,
             "courseId": "11"
           },
           {
             "id": "61",
             "title": "Submission 5",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Doe",
-              "studentId": "i8364255"
+              "firstName": "Fiona",
+              "lastName": "Johnson",
+              "studentId": "i0014853"
             },
-            "rating": 3,
-            "date": "2024-05-05T18:18:39.722Z",
+            "rating": 5,
+            "date": "2023-03-06T22:36:28.268Z",
+            "academicYear": 2021,
             "courseId": "11"
           },
           {
             "id": "62",
-            "title": "Submission 1",
+            "title": "Submission 4",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Brown",
-              "studentId": "i9884037"
+              "firstName": "David",
+              "lastName": "Miller",
+              "studentId": "i5507989"
             },
-            "rating": 2,
-            "date": "2022-10-12T09:11:55.850Z",
+            "rating": 5,
+            "date": "2024-05-25T18:52:48.526Z",
+            "academicYear": 2018,
             "courseId": "11"
           },
           {
             "id": "63",
-            "title": "Submission 7",
+            "title": "Submission 5",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Wilson",
-              "studentId": "i3885072"
+              "firstName": "Fiona",
+              "lastName": "Smith",
+              "studentId": "i7102243"
             },
-            "rating": 2,
-            "date": "2022-11-27T14:45:55.771Z",
+            "rating": 5,
+            "date": "2023-05-22T16:23:15.860Z",
+            "academicYear": 2024,
             "courseId": "11"
           },
           {
             "id": "64",
-            "title": "Submission 5",
+            "title": "Submission 4",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Smith",
-              "studentId": "i2149856"
+              "firstName": "Emily",
+              "lastName": "Doe",
+              "studentId": "i2056432"
             },
             "rating": 2,
-            "date": "2024-01-16T13:47:37.826Z",
+            "date": "2023-03-19T05:36:30.881Z",
+            "academicYear": 2021,
             "courseId": "11"
           },
           {
             "id": "65",
-            "title": "Submission 2",
+            "title": "Submission 9",
             "author": {
-              "firstName": "Charlie",
+              "firstName": "David",
               "lastName": "Miller",
-              "studentId": "i3041566"
+              "studentId": "i9703240"
             },
             "rating": 4,
-            "date": "2023-04-14T22:51:07.550Z",
+            "date": "2024-06-30T12:15:58.368Z",
+            "academicYear": 2020,
             "courseId": "11"
           }
         ],
@@ -890,14 +956,15 @@
         "submissions": [
           {
             "id": "66",
-            "title": "Submission 5",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Taylor",
-              "studentId": "i4919309"
+              "firstName": "Emily",
+              "lastName": "Davis",
+              "studentId": "i3854821"
             },
             "rating": 4,
-            "date": "2024-04-03T19:14:19.179Z",
+            "date": "2023-05-13T08:54:38.696Z",
+            "academicYear": 2018,
             "courseId": "12"
           },
           {
@@ -905,59 +972,64 @@
             "title": "Submission 8",
             "author": {
               "firstName": "John",
-              "lastName": "Brown",
-              "studentId": "i6312114"
+              "lastName": "Miller",
+              "studentId": "i0647084"
             },
             "rating": 2,
-            "date": "2024-05-12T03:43:20.713Z",
+            "date": "2022-11-05T13:57:49.565Z",
+            "academicYear": 2024,
             "courseId": "12"
           },
           {
             "id": "68",
-            "title": "Submission 5",
+            "title": "Submission 7",
             "author": {
-              "firstName": "Bob",
+              "firstName": "John",
               "lastName": "Doe",
-              "studentId": "i0536136"
+              "studentId": "i1560027"
             },
-            "rating": 4,
-            "date": "2024-03-17T07:29:21.162Z",
+            "rating": 1,
+            "date": "2023-10-14T17:11:00.014Z",
+            "academicYear": 2020,
             "courseId": "12"
           },
           {
             "id": "69",
-            "title": "Submission 6",
+            "title": "Submission 5",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Taylor",
-              "studentId": "i4936860"
+              "firstName": "Jane",
+              "lastName": "Smith",
+              "studentId": "i3311302"
             },
-            "rating": 3,
-            "date": "2022-12-26T03:29:41.634Z",
+            "rating": 1,
+            "date": "2024-08-23T14:55:06.402Z",
+            "academicYear": 2021,
             "courseId": "12"
           },
           {
             "id": "70",
-            "title": "Submission 3",
+            "title": "Submission 2",
             "author": {
               "firstName": "Charlie",
-              "lastName": "Smith",
-              "studentId": "i8753031"
+              "lastName": "Johnson",
+              "studentId": "i3468942"
             },
             "rating": 1,
-            "date": "2023-12-19T03:43:40.976Z",
+            "date": "2024-06-01T07:36:07.086Z",
+            "academicYear": 2020,
             "courseId": "12"
           },
           {
             "id": "71",
-            "title": "Submission 6",
+            "title": "Submission 3",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Johnson",
-              "studentId": "i3945417"
+              "firstName": "Jane",
+              "lastName": "Brown",
+              "studentId": "i5608647"
             },
-            "rating": 4,
-            "date": "2023-09-04T14:13:28.480Z",
+            "rating": 3,
+            "date": "2024-04-12T07:26:25.432Z",
+            "academicYear": 2024,
             "courseId": "12"
           }
         ],
@@ -974,74 +1046,80 @@
         "submissions": [
           {
             "id": "72",
-            "title": "Submission 4",
+            "title": "Submission 3",
             "author": {
-              "firstName": "Fiona",
-              "lastName": "Brown",
-              "studentId": "i8820401"
+              "firstName": "Alice",
+              "lastName": "Taylor",
+              "studentId": "i6118997"
             },
-            "rating": 3,
-            "date": "2024-02-04T20:39:48.618Z",
+            "rating": 1,
+            "date": "2023-11-12T11:34:35.443Z",
+            "academicYear": 2019,
             "courseId": "13"
           },
           {
             "id": "73",
-            "title": "Submission 7",
+            "title": "Submission 5",
             "author": {
-              "firstName": "John",
-              "lastName": "Wilson",
-              "studentId": "i0531957"
+              "firstName": "Jane",
+              "lastName": "Davis",
+              "studentId": "i8214332"
             },
             "rating": 2,
-            "date": "2024-06-07T08:46:29.066Z",
+            "date": "2023-11-29T10:12:35.143Z",
+            "academicYear": 2018,
             "courseId": "13"
           },
           {
             "id": "74",
-            "title": "Submission 6",
+            "title": "Submission 0",
             "author": {
               "firstName": "Emily",
-              "lastName": "Brown",
-              "studentId": "i6954918"
+              "lastName": "Johnson",
+              "studentId": "i5476423"
             },
-            "rating": 3,
-            "date": "2023-12-20T02:49:28.592Z",
+            "rating": 1,
+            "date": "2023-03-02T15:46:30.949Z",
+            "academicYear": 2021,
             "courseId": "13"
           },
           {
             "id": "75",
-            "title": "Submission 1",
+            "title": "Submission 8",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Davis",
-              "studentId": "i5511023"
+              "firstName": "Alice",
+              "lastName": "Miller",
+              "studentId": "i3459949"
             },
-            "rating": 5,
-            "date": "2023-03-16T11:24:46.464Z",
+            "rating": 2,
+            "date": "2023-05-27T14:22:29.781Z",
+            "academicYear": 2019,
             "courseId": "13"
           },
           {
             "id": "76",
             "title": "Submission 3",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Johnson",
-              "studentId": "i9707000"
+              "firstName": "David",
+              "lastName": "Smith",
+              "studentId": "i1904911"
             },
-            "rating": 1,
-            "date": "2022-11-01T04:43:38.400Z",
+            "rating": 5,
+            "date": "2024-01-30T23:51:00.091Z",
+            "academicYear": 2018,
             "courseId": "13"
           },
           {
             "id": "77",
             "title": "Submission 4",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Doe",
-              "studentId": "i3356756"
+              "firstName": "John",
+              "lastName": "Miller",
+              "studentId": "i2594185"
             },
-            "rating": 4,
-            "date": "2024-03-04T02:44:06.248Z",
+            "rating": 2,
+            "date": "2023-03-02T13:37:47.133Z",
+            "academicYear": 2024,
             "courseId": "13"
           }
         ],
@@ -1054,26 +1132,28 @@
         "submissions": [
           {
             "id": "78",
-            "title": "Submission 3",
+            "title": "Submission 1",
             "author": {
-              "firstName": "John",
+              "firstName": "David",
               "lastName": "Miller",
-              "studentId": "i5826330"
+              "studentId": "i1436018"
             },
-            "rating": 3,
-            "date": "2023-08-03T18:13:21.501Z",
+            "rating": 2,
+            "date": "2022-12-09T01:07:19.568Z",
+            "academicYear": 2024,
             "courseId": "14"
           },
           {
             "id": "79",
-            "title": "Submission 2",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Davis",
-              "studentId": "i4368400"
+              "firstName": "Emily",
+              "lastName": "Brown",
+              "studentId": "i6490405"
             },
-            "rating": 5,
-            "date": "2023-02-23T08:55:36.425Z",
+            "rating": 1,
+            "date": "2024-05-02T18:09:05.014Z",
+            "academicYear": 2024,
             "courseId": "14"
           },
           {
@@ -1081,47 +1161,51 @@
             "title": "Submission 0",
             "author": {
               "firstName": "David",
-              "lastName": "Miller",
-              "studentId": "i6461564"
+              "lastName": "Smith",
+              "studentId": "i7380044"
             },
-            "rating": 1,
-            "date": "2024-03-26T12:03:11.303Z",
+            "rating": 3,
+            "date": "2022-10-07T02:23:39.458Z",
+            "academicYear": 2024,
             "courseId": "14"
           },
           {
             "id": "81",
-            "title": "Submission 3",
+            "title": "Submission 9",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Brown",
-              "studentId": "i6965011"
+              "firstName": "Jane",
+              "lastName": "Miller",
+              "studentId": "i0857715"
             },
-            "rating": 4,
-            "date": "2024-02-19T04:35:54.203Z",
+            "rating": 5,
+            "date": "2023-12-01T18:23:43.382Z",
+            "academicYear": 2022,
             "courseId": "14"
           },
           {
             "id": "82",
-            "title": "Submission 3",
+            "title": "Submission 0",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Taylor",
-              "studentId": "i1744850"
+              "firstName": "Jane",
+              "lastName": "Smith",
+              "studentId": "i6433223"
             },
-            "rating": 5,
-            "date": "2023-01-09T11:12:35.519Z",
+            "rating": 4,
+            "date": "2024-02-27T14:55:13.362Z",
+            "academicYear": 2020,
             "courseId": "14"
           },
           {
             "id": "83",
-            "title": "Submission 5",
+            "title": "Submission 8",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Johnson",
-              "studentId": "i2464457"
+              "firstName": "Jane",
+              "lastName": "Doe",
+              "studentId": "i7048750"
             },
-            "rating": 2,
-            "date": "2023-04-14T08:40:07.871Z",
+            "rating": 5,
+            "date": "2024-05-22T01:02:02.520Z",
+            "academicYear": 2020,
             "courseId": "14"
           }
         ],
@@ -1134,74 +1218,80 @@
         "submissions": [
           {
             "id": "84",
-            "title": "Submission 7",
+            "title": "Submission 2",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Miller",
-              "studentId": "i8800503"
+              "firstName": "John",
+              "lastName": "Smith",
+              "studentId": "i5424551"
             },
-            "rating": 3,
-            "date": "2023-11-05T00:29:26.155Z",
+            "rating": 2,
+            "date": "2023-07-08T03:40:49.771Z",
+            "academicYear": 2018,
             "courseId": "15"
           },
           {
             "id": "85",
-            "title": "Submission 2",
+            "title": "Submission 0",
             "author": {
-              "firstName": "David",
-              "lastName": "Taylor",
-              "studentId": "i6023034"
+              "firstName": "Fiona",
+              "lastName": "Davis",
+              "studentId": "i1893343"
             },
-            "rating": 5,
-            "date": "2023-05-14T10:56:42.937Z",
+            "rating": 3,
+            "date": "2024-05-27T23:04:47.446Z",
+            "academicYear": 2019,
             "courseId": "15"
           },
           {
             "id": "86",
-            "title": "Submission 8",
+            "title": "Submission 3",
             "author": {
-              "firstName": "Fiona",
-              "lastName": "Wilson",
-              "studentId": "i4313595"
+              "firstName": "Bob",
+              "lastName": "Miller",
+              "studentId": "i1415051"
             },
-            "rating": 5,
-            "date": "2024-05-21T10:33:02.854Z",
+            "rating": 2,
+            "date": "2024-09-22T05:42:28.924Z",
+            "academicYear": 2020,
             "courseId": "15"
           },
           {
             "id": "87",
-            "title": "Submission 4",
+            "title": "Submission 9",
             "author": {
-              "firstName": "David",
-              "lastName": "Doe",
-              "studentId": "i0192173"
+              "firstName": "Charlie",
+              "lastName": "Wilson",
+              "studentId": "i1166462"
             },
-            "rating": 2,
-            "date": "2023-07-12T19:08:31.813Z",
+            "rating": 4,
+            "date": "2024-06-07T22:31:28.151Z",
+            "academicYear": 2021,
             "courseId": "15"
           },
           {
             "id": "88",
-            "title": "Submission 9",
+            "title": "Submission 8",
             "author": {
-              "firstName": "Fiona",
-              "lastName": "Smith",
-              "studentId": "i0006212"
+              "firstName": "Charlie",
+              "lastName": "Taylor",
+              "studentId": "i6227951"
             },
-            "rating": 5,
-            "date": "2024-01-19T23:44:04.907Z",
+            "rating": 2,
+            "date": "2023-03-04T14:03:57.987Z",
+            "academicYear": 2024,
             "courseId": "15"
           },
           {
             "id": "89",
             "title": "Submission 5",
             "author": {
-              "firstName": "John",
-              "lastName": "Wilson",
-              "studentId": "i1776254"
+              "firstName": "David",
+              "lastName": "Taylor",
+              "studentId": "i7285112"
             },
-            "rating": 2,
-            "date": "2023-12-29T14:14:22.304Z",
+            "rating": 3,
+            "date": "2023-06-22T09:29:13.268Z",
+            "academicYear": 2018,
             "courseId": "15"
           }
         ],
@@ -1214,74 +1304,80 @@
         "submissions": [
           {
             "id": "90",
-            "title": "Submission 0",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Miller",
-              "studentId": "i6780987"
+              "firstName": "John",
+              "lastName": "Brown",
+              "studentId": "i5048835"
             },
-            "rating": 1,
-            "date": "2022-11-17T08:23:29.768Z",
+            "rating": 5,
+            "date": "2024-09-03T12:26:39.665Z",
+            "academicYear": 2018,
             "courseId": "16"
           },
           {
             "id": "91",
-            "title": "Submission 6",
+            "title": "Submission 7",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Miller",
-              "studentId": "i8701835"
+              "firstName": "David",
+              "lastName": "Taylor",
+              "studentId": "i9918464"
             },
             "rating": 2,
-            "date": "2023-08-30T13:59:50.452Z",
+            "date": "2022-11-05T05:08:39.975Z",
+            "academicYear": 2023,
             "courseId": "16"
           },
           {
             "id": "92",
-            "title": "Submission 8",
+            "title": "Submission 7",
             "author": {
-              "firstName": "Jane",
+              "firstName": "Alice",
               "lastName": "Brown",
-              "studentId": "i8750175"
+              "studentId": "i9786472"
             },
-            "rating": 1,
-            "date": "2024-01-19T13:01:29.541Z",
+            "rating": 3,
+            "date": "2023-02-26T21:23:46.279Z",
+            "academicYear": 2018,
             "courseId": "16"
           },
           {
             "id": "93",
-            "title": "Submission 6",
+            "title": "Submission 1",
             "author": {
-              "firstName": "David",
-              "lastName": "Davis",
-              "studentId": "i9252609"
+              "firstName": "John",
+              "lastName": "Doe",
+              "studentId": "i3932792"
             },
-            "rating": 2,
-            "date": "2024-08-14T17:12:36.605Z",
+            "rating": 4,
+            "date": "2024-04-07T12:53:06.651Z",
+            "academicYear": 2023,
             "courseId": "16"
           },
           {
             "id": "94",
             "title": "Submission 8",
             "author": {
-              "firstName": "Jane",
+              "firstName": "Fiona",
               "lastName": "Davis",
-              "studentId": "i9076237"
+              "studentId": "i8773237"
             },
             "rating": 3,
-            "date": "2023-05-02T02:08:06.410Z",
+            "date": "2024-08-19T02:45:48.447Z",
+            "academicYear": 2021,
             "courseId": "16"
           },
           {
             "id": "95",
-            "title": "Submission 6",
+            "title": "Submission 5",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Taylor",
-              "studentId": "i1542815"
+              "firstName": "Emily",
+              "lastName": "Miller",
+              "studentId": "i0078286"
             },
-            "rating": 2,
-            "date": "2024-08-25T02:40:07.925Z",
+            "rating": 4,
+            "date": "2023-12-06T04:56:29.226Z",
+            "academicYear": 2018,
             "courseId": "16"
           }
         ],
@@ -1294,74 +1390,80 @@
         "submissions": [
           {
             "id": "96",
-            "title": "Submission 5",
+            "title": "Submission 0",
             "author": {
-              "firstName": "Charlie",
+              "firstName": "Alice",
               "lastName": "Davis",
-              "studentId": "i4409873"
+              "studentId": "i5109283"
             },
             "rating": 1,
-            "date": "2024-08-07T11:27:16.609Z",
+            "date": "2023-10-05T11:30:51.653Z",
+            "academicYear": 2019,
             "courseId": "17"
           },
           {
             "id": "97",
-            "title": "Submission 4",
+            "title": "Submission 8",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Miller",
-              "studentId": "i8635017"
+              "firstName": "John",
+              "lastName": "Davis",
+              "studentId": "i4508981"
             },
-            "rating": 4,
-            "date": "2023-06-13T20:25:43.493Z",
+            "rating": 2,
+            "date": "2024-01-19T01:32:37.282Z",
+            "academicYear": 2022,
             "courseId": "17"
           },
           {
             "id": "98",
-            "title": "Submission 1",
+            "title": "Submission 8",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Davis",
-              "studentId": "i6858462"
+              "firstName": "Jane",
+              "lastName": "Doe",
+              "studentId": "i7312309"
             },
-            "rating": 3,
-            "date": "2023-09-20T04:08:06.875Z",
+            "rating": 5,
+            "date": "2023-05-03T19:24:32.025Z",
+            "academicYear": 2019,
             "courseId": "17"
           },
           {
             "id": "99",
-            "title": "Submission 9",
+            "title": "Submission 8",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Wilson",
-              "studentId": "i6919412"
+              "firstName": "David",
+              "lastName": "Doe",
+              "studentId": "i2703529"
             },
-            "rating": 3,
-            "date": "2024-07-08T04:16:49.995Z",
+            "rating": 5,
+            "date": "2023-10-05T14:53:07.616Z",
+            "academicYear": 2022,
             "courseId": "17"
           },
           {
             "id": "100",
-            "title": "Submission 5",
+            "title": "Submission 6",
             "author": {
-              "firstName": "John",
-              "lastName": "Doe",
-              "studentId": "i9221748"
+              "firstName": "Bob",
+              "lastName": "Taylor",
+              "studentId": "i7921288"
             },
-            "rating": 3,
-            "date": "2023-11-10T13:16:22.757Z",
+            "rating": 5,
+            "date": "2024-01-28T10:19:46.910Z",
+            "academicYear": 2022,
             "courseId": "17"
           },
           {
             "id": "101",
             "title": "Submission 2",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Wilson",
-              "studentId": "i5403673"
+              "firstName": "David",
+              "lastName": "Brown",
+              "studentId": "i6653998"
             },
             "rating": 2,
-            "date": "2024-08-31T22:15:19.191Z",
+            "date": "2023-11-25T05:24:33.724Z",
+            "academicYear": 2020,
             "courseId": "17"
           }
         ],
@@ -1374,74 +1476,80 @@
         "submissions": [
           {
             "id": "102",
-            "title": "Submission 1",
+            "title": "Submission 8",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Miller",
-              "studentId": "i4161120"
+              "firstName": "Jane",
+              "lastName": "Wilson",
+              "studentId": "i5115475"
             },
-            "rating": 4,
-            "date": "2024-01-24T09:50:24.576Z",
+            "rating": 1,
+            "date": "2023-02-20T10:46:16.141Z",
+            "academicYear": 2021,
             "courseId": "18"
           },
           {
             "id": "103",
-            "title": "Submission 6",
+            "title": "Submission 1",
             "author": {
               "firstName": "Jane",
-              "lastName": "Miller",
-              "studentId": "i7827832"
+              "lastName": "Davis",
+              "studentId": "i3099939"
             },
             "rating": 5,
-            "date": "2023-04-05T11:08:46.515Z",
+            "date": "2023-11-02T00:34:35.248Z",
+            "academicYear": 2023,
             "courseId": "18"
           },
           {
             "id": "104",
-            "title": "Submission 0",
+            "title": "Submission 6",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Smith",
-              "studentId": "i7331052"
+              "firstName": "John",
+              "lastName": "Taylor",
+              "studentId": "i1764428"
             },
-            "rating": 3,
-            "date": "2022-10-16T06:00:08.338Z",
+            "rating": 5,
+            "date": "2023-12-17T03:22:10.916Z",
+            "academicYear": 2022,
             "courseId": "18"
           },
           {
             "id": "105",
-            "title": "Submission 9",
+            "title": "Submission 4",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Brown",
-              "studentId": "i7147674"
+              "firstName": "Charlie",
+              "lastName": "Taylor",
+              "studentId": "i4285418"
             },
-            "rating": 5,
-            "date": "2023-03-15T12:10:09.094Z",
+            "rating": 3,
+            "date": "2023-01-08T00:36:04.577Z",
+            "academicYear": 2021,
             "courseId": "18"
           },
           {
             "id": "106",
-            "title": "Submission 4",
+            "title": "Submission 3",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Davis",
-              "studentId": "i6282235"
+              "firstName": "David",
+              "lastName": "Taylor",
+              "studentId": "i2114913"
             },
-            "rating": 4,
-            "date": "2024-05-16T18:08:32.613Z",
+            "rating": 5,
+            "date": "2024-05-22T12:14:16.527Z",
+            "academicYear": 2022,
             "courseId": "18"
           },
           {
             "id": "107",
-            "title": "Submission 1",
+            "title": "Submission 6",
             "author": {
-              "firstName": "Fiona",
-              "lastName": "Wilson",
-              "studentId": "i5278728"
+              "firstName": "David",
+              "lastName": "Doe",
+              "studentId": "i2939834"
             },
-            "rating": 2,
-            "date": "2023-01-30T21:45:23.973Z",
+            "rating": 3,
+            "date": "2023-02-01T16:36:31.700Z",
+            "academicYear": 2018,
             "courseId": "18"
           }
         ],
@@ -1454,74 +1562,80 @@
         "submissions": [
           {
             "id": "108",
-            "title": "Submission 7",
+            "title": "Submission 9",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Wilson",
-              "studentId": "i9020851"
+              "firstName": "Jane",
+              "lastName": "Smith",
+              "studentId": "i0912812"
             },
-            "rating": 3,
-            "date": "2024-08-30T11:04:23.152Z",
+            "rating": 5,
+            "date": "2024-01-30T14:34:59.065Z",
+            "academicYear": 2018,
             "courseId": "19"
           },
           {
             "id": "109",
-            "title": "Submission 4",
+            "title": "Submission 6",
             "author": {
-              "firstName": "Fiona",
-              "lastName": "Brown",
-              "studentId": "i9906756"
+              "firstName": "Jane",
+              "lastName": "Taylor",
+              "studentId": "i0614623"
             },
-            "rating": 3,
-            "date": "2024-09-12T19:28:18.037Z",
+            "rating": 2,
+            "date": "2024-02-16T13:38:26.287Z",
+            "academicYear": 2019,
             "courseId": "19"
           },
           {
             "id": "110",
-            "title": "Submission 4",
+            "title": "Submission 6",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Miller",
-              "studentId": "i9076713"
+              "firstName": "John",
+              "lastName": "Johnson",
+              "studentId": "i4325916"
             },
-            "rating": 5,
-            "date": "2023-01-13T11:01:22.282Z",
+            "rating": 4,
+            "date": "2023-04-22T17:42:20.626Z",
+            "academicYear": 2021,
             "courseId": "19"
           },
           {
             "id": "111",
-            "title": "Submission 5",
+            "title": "Submission 0",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Miller",
-              "studentId": "i0967533"
+              "firstName": "John",
+              "lastName": "Davis",
+              "studentId": "i1173572"
             },
-            "rating": 2,
-            "date": "2024-01-24T17:53:51.973Z",
+            "rating": 4,
+            "date": "2024-03-26T17:35:14.836Z",
+            "academicYear": 2024,
             "courseId": "19"
           },
           {
             "id": "112",
             "title": "Submission 1",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Taylor",
-              "studentId": "i1775100"
+              "firstName": "Alice",
+              "lastName": "Smith",
+              "studentId": "i3697512"
             },
-            "rating": 2,
-            "date": "2024-04-29T17:53:26.340Z",
+            "rating": 4,
+            "date": "2024-05-07T22:52:50.750Z",
+            "academicYear": 2021,
             "courseId": "19"
           },
           {
             "id": "113",
-            "title": "Submission 7",
+            "title": "Submission 6",
             "author": {
-              "firstName": "Fiona",
-              "lastName": "Johnson",
-              "studentId": "i0743139"
+              "firstName": "David",
+              "lastName": "Doe",
+              "studentId": "i1542804"
             },
-            "rating": 4,
-            "date": "2023-12-20T09:46:54.135Z",
+            "rating": 3,
+            "date": "2022-12-15T10:10:34.981Z",
+            "academicYear": 2018,
             "courseId": "19"
           }
         ],
@@ -1538,72 +1652,78 @@
             "id": "114",
             "title": "Submission 1",
             "author": {
-              "firstName": "Emily",
+              "firstName": "Alice",
               "lastName": "Davis",
-              "studentId": "i2055280"
+              "studentId": "i8995739"
             },
-            "rating": 1,
-            "date": "2023-05-20T03:41:20.343Z",
+            "rating": 2,
+            "date": "2023-09-22T15:26:36.126Z",
+            "academicYear": 2023,
             "courseId": "20"
           },
           {
             "id": "115",
-            "title": "Submission 7",
+            "title": "Submission 2",
             "author": {
-              "firstName": "John",
-              "lastName": "Davis",
-              "studentId": "i7219543"
+              "firstName": "Emily",
+              "lastName": "Wilson",
+              "studentId": "i0887218"
             },
-            "rating": 3,
-            "date": "2024-08-26T00:50:50.876Z",
+            "rating": 2,
+            "date": "2023-12-26T02:20:39.607Z",
+            "academicYear": 2018,
             "courseId": "20"
           },
           {
             "id": "116",
-            "title": "Submission 6",
+            "title": "Submission 5",
             "author": {
-              "firstName": "David",
-              "lastName": "Wilson",
-              "studentId": "i0166087"
+              "firstName": "Fiona",
+              "lastName": "Davis",
+              "studentId": "i0337505"
             },
-            "rating": 1,
-            "date": "2023-07-14T07:16:13.416Z",
+            "rating": 5,
+            "date": "2023-05-25T11:44:55.349Z",
+            "academicYear": 2024,
             "courseId": "20"
           },
           {
             "id": "117",
-            "title": "Submission 1",
+            "title": "Submission 9",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Wilson",
-              "studentId": "i4441205"
+              "firstName": "Fiona",
+              "lastName": "Davis",
+              "studentId": "i7666921"
             },
             "rating": 2,
-            "date": "2024-02-10T22:38:41.082Z",
+            "date": "2023-09-17T11:00:21.408Z",
+            "academicYear": 2020,
             "courseId": "20"
           },
           {
             "id": "118",
-            "title": "Submission 2",
+            "title": "Submission 0",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Taylor",
-              "studentId": "i9860112"
+              "firstName": "John",
+              "lastName": "Johnson",
+              "studentId": "i4622491"
             },
-            "rating": 5,
-            "date": "2023-05-11T06:25:15.166Z",
+            "rating": 2,
+            "date": "2022-12-27T07:22:49.613Z",
+            "academicYear": 2022,
             "courseId": "20"
           },
           {
             "id": "119",
-            "title": "Submission 7",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Taylor",
-              "studentId": "i7867139"
+              "firstName": "Jane",
+              "lastName": "Davis",
+              "studentId": "i9209258"
             },
-            "rating": 3,
-            "date": "2024-07-19T18:00:30.117Z",
+            "rating": 1,
+            "date": "2022-12-19T19:31:19.830Z",
+            "academicYear": 2020,
             "courseId": "20"
           }
         ],
@@ -1616,74 +1736,80 @@
         "submissions": [
           {
             "id": "120",
-            "title": "Submission 3",
+            "title": "Submission 2",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Davis",
-              "studentId": "i4042241"
+              "firstName": "John",
+              "lastName": "Doe",
+              "studentId": "i4919563"
             },
-            "rating": 1,
-            "date": "2023-05-19T05:50:08.350Z",
+            "rating": 3,
+            "date": "2023-11-29T20:45:42.212Z",
+            "academicYear": 2021,
             "courseId": "21"
           },
           {
             "id": "121",
-            "title": "Submission 0",
+            "title": "Submission 7",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Smith",
-              "studentId": "i7370736"
+              "firstName": "Alice",
+              "lastName": "Doe",
+              "studentId": "i5514365"
             },
             "rating": 5,
-            "date": "2023-06-07T20:28:31.482Z",
+            "date": "2023-02-01T11:41:34.616Z",
+            "academicYear": 2020,
             "courseId": "21"
           },
           {
             "id": "122",
-            "title": "Submission 7",
+            "title": "Submission 6",
             "author": {
-              "firstName": "Emily",
+              "firstName": "John",
               "lastName": "Brown",
-              "studentId": "i1621645"
+              "studentId": "i7946018"
             },
-            "rating": 2,
-            "date": "2023-11-29T03:41:09.986Z",
+            "rating": 4,
+            "date": "2023-10-26T03:58:44.927Z",
+            "academicYear": 2018,
             "courseId": "21"
           },
           {
             "id": "123",
             "title": "Submission 4",
             "author": {
-              "firstName": "David",
+              "firstName": "Alice",
               "lastName": "Brown",
-              "studentId": "i3725675"
+              "studentId": "i2067116"
             },
-            "rating": 3,
-            "date": "2022-11-07T03:55:46.948Z",
+            "rating": 5,
+            "date": "2024-04-03T23:05:10.355Z",
+            "academicYear": 2023,
             "courseId": "21"
           },
           {
             "id": "124",
-            "title": "Submission 8",
+            "title": "Submission 0",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Miller",
-              "studentId": "i4156217"
+              "firstName": "John",
+              "lastName": "Davis",
+              "studentId": "i8544763"
             },
             "rating": 5,
-            "date": "2023-11-27T10:46:16.771Z",
+            "date": "2024-04-01T14:06:41.726Z",
+            "academicYear": 2022,
             "courseId": "21"
           },
           {
             "id": "125",
-            "title": "Submission 9",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Charlie",
+              "firstName": "Bob",
               "lastName": "Doe",
-              "studentId": "i1883526"
+              "studentId": "i9779113"
             },
-            "rating": 5,
-            "date": "2023-01-05T16:47:27.810Z",
+            "rating": 1,
+            "date": "2023-09-13T20:16:52.407Z",
+            "academicYear": 2023,
             "courseId": "21"
           }
         ],
@@ -1696,74 +1822,80 @@
         "submissions": [
           {
             "id": "126",
-            "title": "Submission 7",
+            "title": "Submission 0",
             "author": {
               "firstName": "Charlie",
               "lastName": "Davis",
-              "studentId": "i0806438"
+              "studentId": "i2540441"
             },
             "rating": 2,
-            "date": "2023-10-16T14:03:55.935Z",
+            "date": "2024-01-29T21:27:11.009Z",
+            "academicYear": 2022,
             "courseId": "22"
           },
           {
             "id": "127",
-            "title": "Submission 5",
+            "title": "Submission 0",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Davis",
-              "studentId": "i3872391"
+              "firstName": "John",
+              "lastName": "Smith",
+              "studentId": "i4112007"
             },
-            "rating": 4,
-            "date": "2024-05-13T22:31:11.164Z",
+            "rating": 1,
+            "date": "2023-06-14T13:43:08.206Z",
+            "academicYear": 2024,
             "courseId": "22"
           },
           {
             "id": "128",
             "title": "Submission 8",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Miller",
-              "studentId": "i0514649"
+              "firstName": "Charlie",
+              "lastName": "Taylor",
+              "studentId": "i7445187"
             },
-            "rating": 4,
-            "date": "2022-10-12T19:25:37.436Z",
+            "rating": 2,
+            "date": "2023-10-11T08:16:59.733Z",
+            "academicYear": 2023,
             "courseId": "22"
           },
           {
             "id": "129",
-            "title": "Submission 5",
+            "title": "Submission 9",
             "author": {
-              "firstName": "John",
-              "lastName": "Wilson",
-              "studentId": "i7288236"
+              "firstName": "Jane",
+              "lastName": "Taylor",
+              "studentId": "i5000806"
             },
-            "rating": 4,
-            "date": "2024-03-20T20:41:04.922Z",
+            "rating": 3,
+            "date": "2024-07-27T01:35:42.056Z",
+            "academicYear": 2019,
             "courseId": "22"
           },
           {
             "id": "130",
-            "title": "Submission 3",
+            "title": "Submission 4",
             "author": {
-              "firstName": "John",
-              "lastName": "Johnson",
-              "studentId": "i4652755"
+              "firstName": "Fiona",
+              "lastName": "Doe",
+              "studentId": "i9326789"
             },
             "rating": 4,
-            "date": "2023-09-10T13:52:02.459Z",
+            "date": "2023-10-04T04:02:26.590Z",
+            "academicYear": 2023,
             "courseId": "22"
           },
           {
             "id": "131",
-            "title": "Submission 7",
+            "title": "Submission 8",
             "author": {
-              "firstName": "David",
-              "lastName": "Taylor",
-              "studentId": "i7829168"
+              "firstName": "Bob",
+              "lastName": "Wilson",
+              "studentId": "i1699872"
             },
-            "rating": 5,
-            "date": "2023-05-24T09:17:52.032Z",
+            "rating": 3,
+            "date": "2024-07-22T13:07:05.451Z",
+            "academicYear": 2019,
             "courseId": "22"
           }
         ],
@@ -1776,74 +1908,80 @@
         "submissions": [
           {
             "id": "132",
-            "title": "Submission 2",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Smith",
-              "studentId": "i5594998"
+              "firstName": "David",
+              "lastName": "Wilson",
+              "studentId": "i1958376"
             },
-            "rating": 1,
-            "date": "2023-06-25T07:47:27.921Z",
+            "rating": 4,
+            "date": "2023-12-23T09:26:02.479Z",
+            "academicYear": 2021,
             "courseId": "23"
           },
           {
             "id": "133",
-            "title": "Submission 9",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Brown",
-              "studentId": "i1333838"
+              "firstName": "Emily",
+              "lastName": "Taylor",
+              "studentId": "i7772251"
             },
-            "rating": 1,
-            "date": "2024-07-02T22:48:40.839Z",
+            "rating": 5,
+            "date": "2023-07-31T07:50:55.512Z",
+            "academicYear": 2024,
             "courseId": "23"
           },
           {
             "id": "134",
-            "title": "Submission 8",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Davis",
-              "studentId": "i2255197"
+              "firstName": "David",
+              "lastName": "Taylor",
+              "studentId": "i8042428"
             },
-            "rating": 2,
-            "date": "2024-04-20T05:15:33.487Z",
+            "rating": 3,
+            "date": "2023-11-01T08:49:43.175Z",
+            "academicYear": 2019,
             "courseId": "23"
           },
           {
             "id": "135",
-            "title": "Submission 2",
+            "title": "Submission 8",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Brown",
-              "studentId": "i5284906"
+              "firstName": "Emily",
+              "lastName": "Johnson",
+              "studentId": "i5482988"
             },
-            "rating": 3,
-            "date": "2023-07-02T13:50:21.233Z",
+            "rating": 1,
+            "date": "2024-01-29T05:29:18.429Z",
+            "academicYear": 2019,
             "courseId": "23"
           },
           {
             "id": "136",
-            "title": "Submission 3",
+            "title": "Submission 9",
             "author": {
               "firstName": "Bob",
               "lastName": "Doe",
-              "studentId": "i3032266"
+              "studentId": "i4519265"
             },
             "rating": 3,
-            "date": "2023-11-04T07:52:49.736Z",
+            "date": "2024-08-21T20:58:41.413Z",
+            "academicYear": 2023,
             "courseId": "23"
           },
           {
             "id": "137",
-            "title": "Submission 4",
+            "title": "Submission 3",
             "author": {
               "firstName": "David",
-              "lastName": "Wilson",
-              "studentId": "i8692710"
+              "lastName": "Doe",
+              "studentId": "i4155671"
             },
-            "rating": 1,
-            "date": "2023-02-24T16:40:59.612Z",
+            "rating": 3,
+            "date": "2023-07-31T03:12:26.070Z",
+            "academicYear": 2024,
             "courseId": "23"
           }
         ],
@@ -1858,72 +1996,78 @@
             "id": "138",
             "title": "Submission 2",
             "author": {
-              "firstName": "David",
-              "lastName": "Johnson",
-              "studentId": "i8591971"
+              "firstName": "Jane",
+              "lastName": "Miller",
+              "studentId": "i7105543"
             },
-            "rating": 1,
-            "date": "2023-05-17T22:23:21.026Z",
+            "rating": 5,
+            "date": "2023-08-16T21:31:43.203Z",
+            "academicYear": 2022,
             "courseId": "24"
           },
           {
             "id": "139",
-            "title": "Submission 7",
-            "author": {
-              "firstName": "Emily",
-              "lastName": "Taylor",
-              "studentId": "i3359967"
-            },
-            "rating": 2,
-            "date": "2024-01-18T08:54:44.908Z",
-            "courseId": "24"
-          },
-          {
-            "id": "140",
-            "title": "Submission 9",
-            "author": {
-              "firstName": "David",
-              "lastName": "Wilson",
-              "studentId": "i3516079"
-            },
-            "rating": 2,
-            "date": "2023-11-12T08:24:45.909Z",
-            "courseId": "24"
-          },
-          {
-            "id": "141",
-            "title": "Submission 2",
-            "author": {
-              "firstName": "Fiona",
-              "lastName": "Taylor",
-              "studentId": "i6329808"
-            },
-            "rating": 2,
-            "date": "2024-02-02T05:40:22.351Z",
-            "courseId": "24"
-          },
-          {
-            "id": "142",
             "title": "Submission 3",
             "author": {
               "firstName": "Bob",
               "lastName": "Taylor",
-              "studentId": "i6523465"
+              "studentId": "i0835237"
             },
-            "rating": 1,
-            "date": "2023-12-02T20:41:24.314Z",
+            "rating": 5,
+            "date": "2024-02-26T22:15:56.075Z",
+            "academicYear": 2022,
+            "courseId": "24"
+          },
+          {
+            "id": "140",
+            "title": "Submission 4",
+            "author": {
+              "firstName": "David",
+              "lastName": "Taylor",
+              "studentId": "i4331429"
+            },
+            "rating": 4,
+            "date": "2023-02-17T04:09:48.188Z",
+            "academicYear": 2024,
+            "courseId": "24"
+          },
+          {
+            "id": "141",
+            "title": "Submission 6",
+            "author": {
+              "firstName": "Bob",
+              "lastName": "Davis",
+              "studentId": "i0117736"
+            },
+            "rating": 2,
+            "date": "2023-03-26T20:13:45.515Z",
+            "academicYear": 2019,
+            "courseId": "24"
+          },
+          {
+            "id": "142",
+            "title": "Submission 7",
+            "author": {
+              "firstName": "Fiona",
+              "lastName": "Wilson",
+              "studentId": "i8861520"
+            },
+            "rating": 3,
+            "date": "2022-12-01T16:22:01.664Z",
+            "academicYear": 2020,
             "courseId": "24"
           },
           {
             "id": "143",
             "title": "Submission 3",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Taylor",
-              "studentId": "i4954448"
+              "firstName": "Emily",
+              "lastName": "Johnson",
+              "studentId": "i0329484"
             },
             "rating": 5,
-            "date": "2023-10-06T22:44:56.310Z",
+            "date": "2023-10-26T01:30:49.491Z",
+            "academicYear": 2020,
             "courseId": "24"
           }
         ],
@@ -1936,74 +2080,80 @@
         "submissions": [
           {
             "id": "144",
-            "title": "Submission 2",
+            "title": "Submission 7",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Wilson",
-              "studentId": "i3259304"
+              "firstName": "Emily",
+              "lastName": "Brown",
+              "studentId": "i2033987"
             },
-            "rating": 3,
-            "date": "2023-07-05T22:59:03.801Z",
+            "rating": 4,
+            "date": "2024-06-10T03:16:52.286Z",
+            "academicYear": 2021,
             "courseId": "25"
           },
           {
             "id": "145",
-            "title": "Submission 6",
+            "title": "Submission 4",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Taylor",
-              "studentId": "i5749693"
+              "firstName": "Bob",
+              "lastName": "Wilson",
+              "studentId": "i5781168"
             },
-            "rating": 1,
-            "date": "2023-08-09T03:26:26.443Z",
+            "rating": 4,
+            "date": "2024-05-15T13:41:06.741Z",
+            "academicYear": 2018,
             "courseId": "25"
           },
           {
             "id": "146",
-            "title": "Submission 0",
+            "title": "Submission 4",
             "author": {
               "firstName": "Alice",
-              "lastName": "Smith",
-              "studentId": "i0349023"
+              "lastName": "Doe",
+              "studentId": "i7160561"
             },
-            "rating": 4,
-            "date": "2023-11-20T18:29:13.112Z",
+            "rating": 5,
+            "date": "2024-04-23T13:17:53.723Z",
+            "academicYear": 2021,
             "courseId": "25"
           },
           {
             "id": "147",
-            "title": "Submission 3",
+            "title": "Submission 5",
             "author": {
-              "firstName": "Emily",
+              "firstName": "Fiona",
               "lastName": "Doe",
-              "studentId": "i3361160"
+              "studentId": "i2273963"
             },
-            "rating": 2,
-            "date": "2024-08-27T01:18:15.246Z",
+            "rating": 4,
+            "date": "2024-08-26T17:25:54.141Z",
+            "academicYear": 2021,
             "courseId": "25"
           },
           {
             "id": "148",
-            "title": "Submission 6",
+            "title": "Submission 7",
             "author": {
-              "firstName": "David",
-              "lastName": "Doe",
-              "studentId": "i1317470"
+              "firstName": "Charlie",
+              "lastName": "Davis",
+              "studentId": "i3217717"
             },
-            "rating": 2,
-            "date": "2024-05-17T18:44:05.431Z",
+            "rating": 3,
+            "date": "2024-07-04T19:43:21.932Z",
+            "academicYear": 2018,
             "courseId": "25"
           },
           {
             "id": "149",
-            "title": "Submission 9",
+            "title": "Submission 4",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Johnson",
-              "studentId": "i2859912"
+              "firstName": "Fiona",
+              "lastName": "Wilson",
+              "studentId": "i3453799"
             },
-            "rating": 2,
-            "date": "2024-02-01T06:56:39.888Z",
+            "rating": 4,
+            "date": "2022-12-22T13:32:02.509Z",
+            "academicYear": 2018,
             "courseId": "25"
           }
         ],
@@ -2016,50 +2166,54 @@
         "submissions": [
           {
             "id": "150",
-            "title": "Submission 2",
+            "title": "Submission 6",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Johnson",
-              "studentId": "i2462145"
+              "firstName": "Charlie",
+              "lastName": "Taylor",
+              "studentId": "i5522340"
             },
-            "rating": 4,
-            "date": "2024-08-26T23:01:36.242Z",
+            "rating": 1,
+            "date": "2024-04-19T05:35:05.768Z",
+            "academicYear": 2023,
             "courseId": "26"
           },
           {
             "id": "151",
-            "title": "Submission 1",
+            "title": "Submission 5",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Doe",
-              "studentId": "i6510968"
+              "firstName": "Alice",
+              "lastName": "Smith",
+              "studentId": "i5695578"
             },
-            "rating": 4,
-            "date": "2024-05-23T08:03:20.908Z",
+            "rating": 2,
+            "date": "2024-06-09T11:04:57.658Z",
+            "academicYear": 2019,
             "courseId": "26"
           },
           {
             "id": "152",
-            "title": "Submission 5",
+            "title": "Submission 2",
             "author": {
-              "firstName": "David",
-              "lastName": "Smith",
-              "studentId": "i8364281"
+              "firstName": "Jane",
+              "lastName": "Wilson",
+              "studentId": "i7762344"
             },
-            "rating": 5,
-            "date": "2022-10-17T16:30:26.577Z",
+            "rating": 2,
+            "date": "2023-09-07T12:01:22.273Z",
+            "academicYear": 2021,
             "courseId": "26"
           },
           {
             "id": "153",
-            "title": "Submission 6",
+            "title": "Submission 3",
             "author": {
-              "firstName": "David",
-              "lastName": "Johnson",
-              "studentId": "i1003088"
+              "firstName": "Jane",
+              "lastName": "Smith",
+              "studentId": "i5677118"
             },
             "rating": 2,
-            "date": "2023-11-26T01:16:25.205Z",
+            "date": "2022-11-20T18:49:10.966Z",
+            "academicYear": 2019,
             "courseId": "26"
           },
           {
@@ -2067,23 +2221,25 @@
             "title": "Submission 0",
             "author": {
               "firstName": "Alice",
-              "lastName": "Doe",
-              "studentId": "i0732858"
+              "lastName": "Miller",
+              "studentId": "i5274940"
             },
-            "rating": 1,
-            "date": "2023-02-10T14:38:24.699Z",
+            "rating": 3,
+            "date": "2023-02-18T14:33:25.392Z",
+            "academicYear": 2018,
             "courseId": "26"
           },
           {
             "id": "155",
-            "title": "Submission 6",
+            "title": "Submission 5",
             "author": {
-              "firstName": "Charlie",
+              "firstName": "Jane",
               "lastName": "Smith",
-              "studentId": "i6737568"
+              "studentId": "i9634936"
             },
             "rating": 3,
-            "date": "2023-06-21T07:23:10.909Z",
+            "date": "2023-03-27T02:46:59.053Z",
+            "academicYear": 2022,
             "courseId": "26"
           }
         ],
@@ -2096,74 +2252,80 @@
         "submissions": [
           {
             "id": "156",
-            "title": "Submission 8",
+            "title": "Submission 0",
             "author": {
-              "firstName": "John",
-              "lastName": "Doe",
-              "studentId": "i1671001"
+              "firstName": "Jane",
+              "lastName": "Smith",
+              "studentId": "i8398414"
             },
             "rating": 3,
-            "date": "2024-07-31T23:30:06.481Z",
+            "date": "2024-08-20T06:24:13.693Z",
+            "academicYear": 2019,
             "courseId": "27"
           },
           {
             "id": "157",
-            "title": "Submission 2",
+            "title": "Submission 4",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Brown",
-              "studentId": "i4316215"
+              "firstName": "Emily",
+              "lastName": "Taylor",
+              "studentId": "i3361369"
             },
-            "rating": 5,
-            "date": "2023-12-05T22:43:53.476Z",
+            "rating": 2,
+            "date": "2023-06-04T04:55:31.182Z",
+            "academicYear": 2018,
             "courseId": "27"
           },
           {
             "id": "158",
-            "title": "Submission 5",
+            "title": "Submission 4",
             "author": {
               "firstName": "John",
-              "lastName": "Taylor",
-              "studentId": "i9264597"
+              "lastName": "Johnson",
+              "studentId": "i8567802"
             },
-            "rating": 5,
-            "date": "2023-12-06T22:50:57.528Z",
+            "rating": 4,
+            "date": "2023-05-05T21:41:35.894Z",
+            "academicYear": 2021,
             "courseId": "27"
           },
           {
             "id": "159",
-            "title": "Submission 0",
+            "title": "Submission 8",
             "author": {
-              "firstName": "David",
-              "lastName": "Brown",
-              "studentId": "i8540558"
+              "firstName": "John",
+              "lastName": "Miller",
+              "studentId": "i6836551"
             },
-            "rating": 3,
-            "date": "2023-05-11T07:46:19.647Z",
+            "rating": 5,
+            "date": "2023-05-20T07:39:36.395Z",
+            "academicYear": 2018,
             "courseId": "27"
           },
           {
             "id": "160",
-            "title": "Submission 5",
+            "title": "Submission 3",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Johnson",
-              "studentId": "i9110910"
+              "firstName": "Fiona",
+              "lastName": "Davis",
+              "studentId": "i3899943"
             },
-            "rating": 5,
-            "date": "2024-05-31T20:35:39.248Z",
+            "rating": 4,
+            "date": "2023-05-05T04:51:56.929Z",
+            "academicYear": 2020,
             "courseId": "27"
           },
           {
             "id": "161",
-            "title": "Submission 1",
+            "title": "Submission 9",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Wilson",
-              "studentId": "i4300097"
+              "firstName": "John",
+              "lastName": "Johnson",
+              "studentId": "i0444897"
             },
             "rating": 4,
-            "date": "2023-01-03T06:38:51.507Z",
+            "date": "2022-11-25T09:12:35.670Z",
+            "academicYear": 2019,
             "courseId": "27"
           }
         ],
@@ -2180,74 +2342,80 @@
         "submissions": [
           {
             "id": "162",
-            "title": "Submission 7",
+            "title": "Submission 5",
             "author": {
               "firstName": "Jane",
               "lastName": "Doe",
-              "studentId": "i6176993"
+              "studentId": "i5653444"
             },
-            "rating": 5,
-            "date": "2023-08-19T12:48:32.119Z",
+            "rating": 3,
+            "date": "2024-09-10T22:27:20.592Z",
+            "academicYear": 2023,
             "courseId": "28"
           },
           {
             "id": "163",
-            "title": "Submission 6",
+            "title": "Submission 2",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Brown",
-              "studentId": "i5804743"
+              "firstName": "John",
+              "lastName": "Smith",
+              "studentId": "i6315595"
             },
-            "rating": 2,
-            "date": "2023-12-20T17:10:20.210Z",
+            "rating": 5,
+            "date": "2023-02-06T06:59:31.410Z",
+            "academicYear": 2019,
             "courseId": "28"
           },
           {
             "id": "164",
-            "title": "Submission 3",
+            "title": "Submission 2",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Johnson",
-              "studentId": "i1054675"
+              "firstName": "Charlie",
+              "lastName": "Taylor",
+              "studentId": "i3824638"
             },
             "rating": 4,
-            "date": "2024-08-20T13:48:28.872Z",
+            "date": "2024-03-27T00:35:17.571Z",
+            "academicYear": 2021,
             "courseId": "28"
           },
           {
             "id": "165",
-            "title": "Submission 1",
+            "title": "Submission 2",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Taylor",
-              "studentId": "i4138716"
+              "firstName": "David",
+              "lastName": "Smith",
+              "studentId": "i4074655"
             },
-            "rating": 5,
-            "date": "2023-05-27T07:40:00.722Z",
+            "rating": 4,
+            "date": "2022-12-13T11:06:50.351Z",
+            "academicYear": 2018,
             "courseId": "28"
           },
           {
             "id": "166",
-            "title": "Submission 4",
+            "title": "Submission 9",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Wilson",
-              "studentId": "i2513220"
+              "firstName": "Bob",
+              "lastName": "Taylor",
+              "studentId": "i4147079"
             },
-            "rating": 2,
-            "date": "2022-10-15T14:21:15.200Z",
+            "rating": 1,
+            "date": "2023-03-29T21:54:33.599Z",
+            "academicYear": 2019,
             "courseId": "28"
           },
           {
             "id": "167",
             "title": "Submission 3",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Johnson",
-              "studentId": "i9000264"
+              "firstName": "Emily",
+              "lastName": "Davis",
+              "studentId": "i5916589"
             },
-            "rating": 4,
-            "date": "2023-05-28T11:45:05.075Z",
+            "rating": 3,
+            "date": "2024-04-14T09:28:45.261Z",
+            "academicYear": 2020,
             "courseId": "28"
           }
         ],
@@ -2263,71 +2431,77 @@
             "title": "Submission 2",
             "author": {
               "firstName": "John",
-              "lastName": "Brown",
-              "studentId": "i0231291"
+              "lastName": "Johnson",
+              "studentId": "i9741379"
             },
-            "rating": 3,
-            "date": "2023-10-26T14:47:13.068Z",
+            "rating": 5,
+            "date": "2024-01-26T10:57:40.888Z",
+            "academicYear": 2023,
             "courseId": "29"
           },
           {
             "id": "169",
-            "title": "Submission 9",
+            "title": "Submission 6",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Brown",
-              "studentId": "i2115617"
+              "firstName": "David",
+              "lastName": "Miller",
+              "studentId": "i4089456"
             },
-            "rating": 3,
-            "date": "2023-10-20T21:15:11.532Z",
+            "rating": 1,
+            "date": "2023-08-19T03:54:03.192Z",
+            "academicYear": 2020,
             "courseId": "29"
           },
           {
             "id": "170",
-            "title": "Submission 0",
+            "title": "Submission 8",
             "author": {
-              "firstName": "Fiona",
-              "lastName": "Johnson",
-              "studentId": "i6675964"
+              "firstName": "Jane",
+              "lastName": "Brown",
+              "studentId": "i3417361"
             },
-            "rating": 4,
-            "date": "2023-06-17T23:22:42.402Z",
+            "rating": 5,
+            "date": "2024-04-22T15:03:59.898Z",
+            "academicYear": 2019,
             "courseId": "29"
           },
           {
             "id": "171",
-            "title": "Submission 8",
+            "title": "Submission 7",
             "author": {
-              "firstName": "David",
-              "lastName": "Davis",
-              "studentId": "i2270842"
+              "firstName": "Jane",
+              "lastName": "Miller",
+              "studentId": "i0981598"
             },
-            "rating": 2,
-            "date": "2023-11-21T20:55:24.012Z",
+            "rating": 4,
+            "date": "2023-08-25T14:06:11.590Z",
+            "academicYear": 2021,
             "courseId": "29"
           },
           {
             "id": "172",
-            "title": "Submission 7",
+            "title": "Submission 3",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Wilson",
-              "studentId": "i1958796"
+              "firstName": "Jane",
+              "lastName": "Doe",
+              "studentId": "i0708637"
             },
-            "rating": 2,
-            "date": "2023-11-11T02:54:04.781Z",
+            "rating": 1,
+            "date": "2024-05-11T01:09:55.153Z",
+            "academicYear": 2024,
             "courseId": "29"
           },
           {
             "id": "173",
-            "title": "Submission 9",
+            "title": "Submission 8",
             "author": {
-              "firstName": "John",
-              "lastName": "Brown",
-              "studentId": "i1016950"
+              "firstName": "Emily",
+              "lastName": "Johnson",
+              "studentId": "i4302746"
             },
-            "rating": 5,
-            "date": "2023-10-19T18:35:27.601Z",
+            "rating": 4,
+            "date": "2023-04-15T02:57:16.193Z",
+            "academicYear": 2019,
             "courseId": "29"
           }
         ],
@@ -2340,74 +2514,80 @@
         "submissions": [
           {
             "id": "174",
-            "title": "Submission 7",
+            "title": "Submission 0",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Johnson",
-              "studentId": "i6955749"
+              "firstName": "Jane",
+              "lastName": "Doe",
+              "studentId": "i2597199"
             },
-            "rating": 5,
-            "date": "2024-09-18T02:51:41.694Z",
+            "rating": 2,
+            "date": "2023-03-25T10:35:34.562Z",
+            "academicYear": 2024,
             "courseId": "30"
           },
           {
             "id": "175",
             "title": "Submission 1",
             "author": {
-              "firstName": "David",
-              "lastName": "Taylor",
-              "studentId": "i2888232"
+              "firstName": "Emily",
+              "lastName": "Doe",
+              "studentId": "i4405935"
             },
-            "rating": 1,
-            "date": "2024-05-18T13:21:10.839Z",
+            "rating": 5,
+            "date": "2023-02-05T18:04:32.613Z",
+            "academicYear": 2020,
             "courseId": "30"
           },
           {
             "id": "176",
-            "title": "Submission 8",
+            "title": "Submission 3",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Wilson",
-              "studentId": "i9092567"
+              "firstName": "John",
+              "lastName": "Miller",
+              "studentId": "i4109195"
             },
-            "rating": 3,
-            "date": "2022-11-10T05:09:09.425Z",
+            "rating": 2,
+            "date": "2024-09-02T01:29:09.177Z",
+            "academicYear": 2021,
             "courseId": "30"
           },
           {
             "id": "177",
-            "title": "Submission 5",
+            "title": "Submission 9",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Johnson",
-              "studentId": "i9910998"
+              "firstName": "Emily",
+              "lastName": "Davis",
+              "studentId": "i0184524"
             },
-            "rating": 4,
-            "date": "2024-03-31T18:24:57.724Z",
+            "rating": 3,
+            "date": "2024-07-01T11:17:53.501Z",
+            "academicYear": 2024,
             "courseId": "30"
           },
           {
             "id": "178",
-            "title": "Submission 3",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Taylor",
-              "studentId": "i5277114"
+              "firstName": "Bob",
+              "lastName": "Wilson",
+              "studentId": "i1216064"
             },
             "rating": 2,
-            "date": "2022-12-09T08:26:31.168Z",
+            "date": "2024-08-02T09:01:52.592Z",
+            "academicYear": 2018,
             "courseId": "30"
           },
           {
             "id": "179",
-            "title": "Submission 9",
+            "title": "Submission 4",
             "author": {
-              "firstName": "John",
-              "lastName": "Brown",
-              "studentId": "i0007677"
+              "firstName": "Fiona",
+              "lastName": "Davis",
+              "studentId": "i3361339"
             },
-            "rating": 1,
-            "date": "2023-12-09T12:48:24.714Z",
+            "rating": 4,
+            "date": "2024-06-10T01:39:14.507Z",
+            "academicYear": 2023,
             "courseId": "30"
           }
         ],
@@ -2422,72 +2602,78 @@
             "id": "180",
             "title": "Submission 5",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Miller",
-              "studentId": "i4666598"
+              "firstName": "Jane",
+              "lastName": "Johnson",
+              "studentId": "i4868453"
             },
-            "rating": 1,
-            "date": "2022-12-31T17:38:25.845Z",
+            "rating": 3,
+            "date": "2023-07-31T22:11:50.770Z",
+            "academicYear": 2022,
             "courseId": "31"
           },
           {
             "id": "181",
-            "title": "Submission 7",
+            "title": "Submission 5",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Smith",
-              "studentId": "i4950554"
+              "firstName": "Bob",
+              "lastName": "Taylor",
+              "studentId": "i6307927"
             },
-            "rating": 3,
-            "date": "2024-04-12T19:07:44.439Z",
+            "rating": 1,
+            "date": "2023-11-04T08:55:13.598Z",
+            "academicYear": 2018,
             "courseId": "31"
           },
           {
             "id": "182",
-            "title": "Submission 7",
+            "title": "Submission 9",
             "author": {
-              "firstName": "Alice",
+              "firstName": "Emily",
               "lastName": "Smith",
-              "studentId": "i6773396"
+              "studentId": "i5103123"
             },
-            "rating": 1,
-            "date": "2023-02-19T13:56:44.865Z",
+            "rating": 4,
+            "date": "2024-03-07T11:47:17.427Z",
+            "academicYear": 2018,
             "courseId": "31"
           },
           {
             "id": "183",
-            "title": "Submission 5",
+            "title": "Submission 7",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Brown",
-              "studentId": "i6703133"
+              "firstName": "Fiona",
+              "lastName": "Doe",
+              "studentId": "i1769256"
             },
-            "rating": 3,
-            "date": "2023-08-22T16:07:26.712Z",
+            "rating": 1,
+            "date": "2024-06-09T05:28:39.122Z",
+            "academicYear": 2021,
             "courseId": "31"
           },
           {
             "id": "184",
             "title": "Submission 1",
             "author": {
-              "firstName": "John",
-              "lastName": "Doe",
-              "studentId": "i6018079"
+              "firstName": "Bob",
+              "lastName": "Smith",
+              "studentId": "i9142453"
             },
-            "rating": 3,
-            "date": "2023-02-21T13:47:21.055Z",
+            "rating": 2,
+            "date": "2023-08-18T00:31:17.045Z",
+            "academicYear": 2020,
             "courseId": "31"
           },
           {
             "id": "185",
-            "title": "Submission 3",
+            "title": "Submission 5",
             "author": {
-              "firstName": "John",
+              "firstName": "Charlie",
               "lastName": "Wilson",
-              "studentId": "i5360931"
+              "studentId": "i5979389"
             },
-            "rating": 5,
-            "date": "2022-11-21T14:21:54.290Z",
+            "rating": 1,
+            "date": "2023-03-25T18:04:49.455Z",
+            "academicYear": 2024,
             "courseId": "31"
           }
         ],
@@ -2500,74 +2686,80 @@
         "submissions": [
           {
             "id": "186",
-            "title": "Submission 7",
+            "title": "Submission 5",
             "author": {
-              "firstName": "Emily",
-              "lastName": "Doe",
-              "studentId": "i2033371"
+              "firstName": "Charlie",
+              "lastName": "Miller",
+              "studentId": "i8867335"
             },
-            "rating": 2,
-            "date": "2024-01-12T11:35:48.978Z",
+            "rating": 3,
+            "date": "2023-10-05T16:11:08.597Z",
+            "academicYear": 2022,
             "courseId": "32"
           },
           {
             "id": "187",
-            "title": "Submission 2",
+            "title": "Submission 3",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Taylor",
-              "studentId": "i3605954"
+              "firstName": "John",
+              "lastName": "Davis",
+              "studentId": "i1728860"
             },
-            "rating": 1,
-            "date": "2023-05-01T14:52:29.900Z",
+            "rating": 4,
+            "date": "2023-08-24T20:59:24.799Z",
+            "academicYear": 2020,
             "courseId": "32"
           },
           {
             "id": "188",
-            "title": "Submission 6",
+            "title": "Submission 3",
             "author": {
-              "firstName": "John",
-              "lastName": "Miller",
-              "studentId": "i7493517"
+              "firstName": "Jane",
+              "lastName": "Doe",
+              "studentId": "i1926366"
             },
-            "rating": 3,
-            "date": "2024-05-28T20:49:46.138Z",
+            "rating": 5,
+            "date": "2024-05-05T09:06:33.832Z",
+            "academicYear": 2019,
             "courseId": "32"
           },
           {
             "id": "189",
-            "title": "Submission 0",
+            "title": "Submission 5",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Davis",
-              "studentId": "i3511243"
+              "firstName": "Alice",
+              "lastName": "Taylor",
+              "studentId": "i6799742"
             },
             "rating": 1,
-            "date": "2024-06-16T23:28:57.690Z",
+            "date": "2024-03-17T09:36:54.252Z",
+            "academicYear": 2018,
             "courseId": "32"
           },
           {
             "id": "190",
-            "title": "Submission 2",
+            "title": "Submission 8",
             "author": {
-              "firstName": "Fiona",
-              "lastName": "Miller",
-              "studentId": "i7290355"
+              "firstName": "John",
+              "lastName": "Doe",
+              "studentId": "i3166467"
             },
-            "rating": 3,
-            "date": "2023-04-29T15:18:00.667Z",
+            "rating": 2,
+            "date": "2022-09-24T18:46:41.295Z",
+            "academicYear": 2023,
             "courseId": "32"
           },
           {
             "id": "191",
-            "title": "Submission 1",
+            "title": "Submission 3",
             "author": {
-              "firstName": "David",
-              "lastName": "Taylor",
-              "studentId": "i0707718"
+              "firstName": "Emily",
+              "lastName": "Smith",
+              "studentId": "i1440604"
             },
-            "rating": 2,
-            "date": "2023-08-13T13:30:36.577Z",
+            "rating": 3,
+            "date": "2023-11-10T18:10:52.263Z",
+            "academicYear": 2023,
             "courseId": "32"
           }
         ],
@@ -2580,74 +2772,80 @@
         "submissions": [
           {
             "id": "192",
-            "title": "Submission 4",
+            "title": "Submission 3",
             "author": {
-              "firstName": "John",
-              "lastName": "Doe",
-              "studentId": "i0057662"
+              "firstName": "Bob",
+              "lastName": "Davis",
+              "studentId": "i6029703"
             },
-            "rating": 3,
-            "date": "2022-11-17T10:00:19.017Z",
+            "rating": 1,
+            "date": "2024-01-21T12:27:22.885Z",
+            "academicYear": 2019,
             "courseId": "33"
           },
           {
             "id": "193",
-            "title": "Submission 8",
+            "title": "Submission 6",
             "author": {
-              "firstName": "David",
-              "lastName": "Davis",
-              "studentId": "i8125660"
+              "firstName": "Emily",
+              "lastName": "Doe",
+              "studentId": "i4559510"
             },
             "rating": 1,
-            "date": "2023-03-21T13:16:50.358Z",
+            "date": "2022-11-06T08:38:54.120Z",
+            "academicYear": 2024,
             "courseId": "33"
           },
           {
             "id": "194",
-            "title": "Submission 5",
+            "title": "Submission 9",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Doe",
-              "studentId": "i6512194"
+              "firstName": "Emily",
+              "lastName": "Davis",
+              "studentId": "i7132547"
             },
             "rating": 2,
-            "date": "2023-07-08T11:21:08.630Z",
+            "date": "2024-08-27T11:33:21.642Z",
+            "academicYear": 2020,
             "courseId": "33"
           },
           {
             "id": "195",
-            "title": "Submission 5",
+            "title": "Submission 7",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Johnson",
-              "studentId": "i4020111"
+              "firstName": "Jane",
+              "lastName": "Doe",
+              "studentId": "i2499732"
             },
             "rating": 5,
-            "date": "2022-09-29T04:11:54.819Z",
+            "date": "2024-05-01T13:09:20.671Z",
+            "academicYear": 2021,
             "courseId": "33"
           },
           {
             "id": "196",
-            "title": "Submission 9",
+            "title": "Submission 6",
             "author": {
               "firstName": "David",
-              "lastName": "Wilson",
-              "studentId": "i9971657"
+              "lastName": "Taylor",
+              "studentId": "i3982717"
             },
-            "rating": 4,
-            "date": "2023-09-17T13:58:26.748Z",
+            "rating": 1,
+            "date": "2022-10-29T03:19:17.623Z",
+            "academicYear": 2024,
             "courseId": "33"
           },
           {
             "id": "197",
-            "title": "Submission 7",
+            "title": "Submission 9",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Davis",
-              "studentId": "i0962898"
+              "firstName": "John",
+              "lastName": "Wilson",
+              "studentId": "i8691116"
             },
-            "rating": 4,
-            "date": "2023-12-26T01:45:09.627Z",
+            "rating": 1,
+            "date": "2023-09-06T08:20:01.303Z",
+            "academicYear": 2018,
             "courseId": "33"
           }
         ],
@@ -2660,74 +2858,80 @@
         "submissions": [
           {
             "id": "198",
-            "title": "Submission 4",
+            "title": "Submission 6",
             "author": {
-              "firstName": "David",
+              "firstName": "John",
               "lastName": "Davis",
-              "studentId": "i1051735"
+              "studentId": "i2423578"
             },
             "rating": 5,
-            "date": "2024-06-08T11:53:54.909Z",
+            "date": "2023-02-11T06:02:04.540Z",
+            "academicYear": 2018,
             "courseId": "34"
           },
           {
             "id": "199",
-            "title": "Submission 7",
+            "title": "Submission 2",
             "author": {
-              "firstName": "David",
-              "lastName": "Doe",
-              "studentId": "i6163765"
+              "firstName": "Jane",
+              "lastName": "Davis",
+              "studentId": "i4850504"
             },
-            "rating": 3,
-            "date": "2023-10-31T19:30:16.412Z",
+            "rating": 1,
+            "date": "2023-11-28T13:53:22.203Z",
+            "academicYear": 2020,
             "courseId": "34"
           },
           {
             "id": "200",
-            "title": "Submission 9",
+            "title": "Submission 4",
             "author": {
-              "firstName": "David",
-              "lastName": "Doe",
-              "studentId": "i9742471"
+              "firstName": "Bob",
+              "lastName": "Brown",
+              "studentId": "i9912529"
             },
-            "rating": 2,
-            "date": "2023-07-09T09:59:59.159Z",
+            "rating": 4,
+            "date": "2024-05-12T07:17:04.100Z",
+            "academicYear": 2021,
             "courseId": "34"
           },
           {
             "id": "201",
-            "title": "Submission 0",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Brown",
-              "studentId": "i2258527"
+              "firstName": "John",
+              "lastName": "Doe",
+              "studentId": "i1715635"
             },
-            "rating": 5,
-            "date": "2024-04-16T20:22:31.308Z",
+            "rating": 3,
+            "date": "2022-11-25T13:14:05.712Z",
+            "academicYear": 2021,
             "courseId": "34"
           },
           {
             "id": "202",
-            "title": "Submission 0",
+            "title": "Submission 4",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Smith",
-              "studentId": "i1038550"
+              "firstName": "Charlie",
+              "lastName": "Taylor",
+              "studentId": "i3343171"
             },
-            "rating": 5,
-            "date": "2023-03-06T12:39:38.481Z",
+            "rating": 3,
+            "date": "2023-07-29T21:13:59.024Z",
+            "academicYear": 2024,
             "courseId": "34"
           },
           {
             "id": "203",
-            "title": "Submission 3",
+            "title": "Submission 7",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Miller",
-              "studentId": "i9146079"
+              "firstName": "Jane",
+              "lastName": "Doe",
+              "studentId": "i8758749"
             },
-            "rating": 1,
-            "date": "2023-03-18T09:19:49.219Z",
+            "rating": 4,
+            "date": "2023-11-02T13:19:11.703Z",
+            "academicYear": 2021,
             "courseId": "34"
           }
         ],
@@ -2742,74 +2946,80 @@
         "submissions": [
           {
             "id": "204",
-            "title": "Submission 9",
+            "title": "Submission 7",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Brown",
-              "studentId": "i2753380"
+              "firstName": "Emily",
+              "lastName": "Taylor",
+              "studentId": "i8363444"
             },
-            "rating": 1,
-            "date": "2022-10-31T00:37:22.382Z",
+            "rating": 4,
+            "date": "2024-01-18T04:36:04.651Z",
+            "academicYear": 2022,
             "courseId": "35"
           },
           {
             "id": "205",
-            "title": "Submission 0",
+            "title": "Submission 1",
             "author": {
-              "firstName": "David",
-              "lastName": "Taylor",
-              "studentId": "i6746022"
+              "firstName": "Emily",
+              "lastName": "Miller",
+              "studentId": "i6484687"
             },
-            "rating": 4,
-            "date": "2023-08-28T09:37:41.646Z",
+            "rating": 3,
+            "date": "2023-03-22T11:41:44.966Z",
+            "academicYear": 2018,
             "courseId": "35"
           },
           {
             "id": "206",
-            "title": "Submission 8",
+            "title": "Submission 4",
             "author": {
-              "firstName": "John",
+              "firstName": "Jane",
               "lastName": "Davis",
-              "studentId": "i0388692"
+              "studentId": "i0400703"
             },
-            "rating": 2,
-            "date": "2022-11-01T16:26:36.266Z",
+            "rating": 4,
+            "date": "2024-03-15T21:55:53.407Z",
+            "academicYear": 2020,
             "courseId": "35"
           },
           {
             "id": "207",
-            "title": "Submission 1",
+            "title": "Submission 3",
             "author": {
-              "firstName": "Bob",
+              "firstName": "Charlie",
               "lastName": "Smith",
-              "studentId": "i1846679"
+              "studentId": "i8317925"
             },
-            "rating": 4,
-            "date": "2023-08-02T10:22:39.121Z",
+            "rating": 5,
+            "date": "2023-02-09T17:14:36.400Z",
+            "academicYear": 2021,
             "courseId": "35"
           },
           {
             "id": "208",
-            "title": "Submission 9",
+            "title": "Submission 6",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Miller",
-              "studentId": "i9169887"
+              "firstName": "John",
+              "lastName": "Brown",
+              "studentId": "i2776344"
             },
             "rating": 5,
-            "date": "2024-04-14T12:28:41.830Z",
+            "date": "2024-02-06T06:34:53.877Z",
+            "academicYear": 2024,
             "courseId": "35"
           },
           {
             "id": "209",
-            "title": "Submission 9",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Johnson",
-              "studentId": "i3003997"
+              "firstName": "Jane",
+              "lastName": "Smith",
+              "studentId": "i6817685"
             },
-            "rating": 4,
-            "date": "2023-12-20T10:16:24.939Z",
+            "rating": 1,
+            "date": "2023-02-12T19:03:51.096Z",
+            "academicYear": 2022,
             "courseId": "35"
           }
         ],
@@ -2822,74 +3032,80 @@
         "submissions": [
           {
             "id": "210",
-            "title": "Submission 4",
+            "title": "Submission 9",
             "author": {
-              "firstName": "Fiona",
-              "lastName": "Brown",
-              "studentId": "i9711953"
+              "firstName": "Alice",
+              "lastName": "Davis",
+              "studentId": "i5646637"
             },
-            "rating": 4,
-            "date": "2023-07-24T17:53:23.754Z",
+            "rating": 1,
+            "date": "2023-11-25T15:23:03.893Z",
+            "academicYear": 2024,
             "courseId": "36"
           },
           {
             "id": "211",
-            "title": "Submission 7",
+            "title": "Submission 9",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Smith",
-              "studentId": "i4748107"
+              "firstName": "Charlie",
+              "lastName": "Taylor",
+              "studentId": "i5205328"
             },
-            "rating": 1,
-            "date": "2024-07-17T21:17:52.717Z",
+            "rating": 5,
+            "date": "2024-03-23T15:26:51.036Z",
+            "academicYear": 2024,
             "courseId": "36"
           },
           {
             "id": "212",
-            "title": "Submission 9",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Alice",
-              "lastName": "Johnson",
-              "studentId": "i8531057"
+              "firstName": "David",
+              "lastName": "Taylor",
+              "studentId": "i1396996"
             },
-            "rating": 1,
-            "date": "2023-08-19T11:36:15.797Z",
+            "rating": 5,
+            "date": "2023-03-12T00:56:17.832Z",
+            "academicYear": 2019,
             "courseId": "36"
           },
           {
             "id": "213",
-            "title": "Submission 9",
+            "title": "Submission 8",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Wilson",
-              "studentId": "i2269941"
+              "firstName": "Fiona",
+              "lastName": "Brown",
+              "studentId": "i3254067"
             },
-            "rating": 1,
-            "date": "2024-08-10T13:20:39.161Z",
+            "rating": 5,
+            "date": "2022-12-28T19:46:22.697Z",
+            "academicYear": 2023,
             "courseId": "36"
           },
           {
             "id": "214",
-            "title": "Submission 5",
+            "title": "Submission 0",
             "author": {
-              "firstName": "Bob",
-              "lastName": "Wilson",
-              "studentId": "i9337430"
+              "firstName": "Emily",
+              "lastName": "Miller",
+              "studentId": "i9282547"
             },
             "rating": 3,
-            "date": "2024-06-15T15:58:10.537Z",
+            "date": "2023-12-18T08:57:47.595Z",
+            "academicYear": 2024,
             "courseId": "36"
           },
           {
             "id": "215",
-            "title": "Submission 5",
+            "title": "Submission 7",
             "author": {
               "firstName": "Jane",
-              "lastName": "Smith",
-              "studentId": "i1288962"
+              "lastName": "Miller",
+              "studentId": "i5441504"
             },
-            "rating": 3,
-            "date": "2024-09-08T13:29:12.793Z",
+            "rating": 5,
+            "date": "2024-04-21T10:01:47.742Z",
+            "academicYear": 2023,
             "courseId": "36"
           }
         ],
@@ -2902,74 +3118,80 @@
         "submissions": [
           {
             "id": "216",
-            "title": "Submission 3",
+            "title": "Submission 9",
             "author": {
-              "firstName": "Jane",
-              "lastName": "Davis",
-              "studentId": "i2553940"
+              "firstName": "Bob",
+              "lastName": "Brown",
+              "studentId": "i1166664"
             },
-            "rating": 5,
-            "date": "2023-05-10T21:10:42.124Z",
+            "rating": 3,
+            "date": "2022-11-05T08:14:15.267Z",
+            "academicYear": 2020,
             "courseId": "37"
           },
           {
             "id": "217",
-            "title": "Submission 7",
+            "title": "Submission 1",
             "author": {
-              "firstName": "Charlie",
-              "lastName": "Johnson",
-              "studentId": "i9924814"
+              "firstName": "Alice",
+              "lastName": "Taylor",
+              "studentId": "i8112958"
             },
-            "rating": 3,
-            "date": "2024-05-12T03:09:03.851Z",
+            "rating": 2,
+            "date": "2024-02-11T01:45:18.898Z",
+            "academicYear": 2021,
             "courseId": "37"
           },
           {
             "id": "218",
-            "title": "Submission 3",
+            "title": "Submission 5",
             "author": {
               "firstName": "Charlie",
-              "lastName": "Taylor",
-              "studentId": "i0840696"
+              "lastName": "Davis",
+              "studentId": "i0916546"
             },
-            "rating": 4,
-            "date": "2023-03-24T21:57:15.779Z",
+            "rating": 3,
+            "date": "2023-03-07T17:14:59.451Z",
+            "academicYear": 2024,
             "courseId": "37"
           },
           {
             "id": "219",
-            "title": "Submission 0",
+            "title": "Submission 3",
             "author": {
               "firstName": "Charlie",
               "lastName": "Johnson",
-              "studentId": "i8643350"
+              "studentId": "i8310720"
             },
-            "rating": 2,
-            "date": "2023-12-23T02:30:01.118Z",
+            "rating": 1,
+            "date": "2022-10-19T05:30:44.086Z",
+            "academicYear": 2023,
             "courseId": "37"
           },
           {
             "id": "220",
-            "title": "Submission 7",
+            "title": "Submission 9",
             "author": {
-              "firstName": "David",
-              "lastName": "Johnson",
-              "studentId": "i0623113"
+              "firstName": "Alice",
+              "lastName": "Davis",
+              "studentId": "i4192583"
             },
-            "rating": 3,
-            "date": "2022-11-10T20:00:25.838Z",
+            "rating": 5,
+            "date": "2023-07-01T14:41:29.941Z",
+            "academicYear": 2021,
             "courseId": "37"
           },
           {
             "id": "221",
-            "title": "Submission 7",
+            "title": "Submission 8",
             "author": {
-              "firstName": "John",
-              "lastName": "Taylor",
-              "studentId": "i1434884"
+              "firstName": "Bob",
+              "lastName": "Doe",
+              "studentId": "i0015609"
             },
-            "rating": 1,
-            "date": "2024-08-10T11:26:18.614Z",
+            "rating": 5,
+            "date": "2023-08-10T02:20:51.220Z",
+            "academicYear": 2019,
             "courseId": "37"
           }
         ],

@@ -18,9 +18,8 @@
   {/if}
   <div class="flex-grow"><slot /></div>
   {#if $page.url.pathname && $page.url.pathname !== "/sign_in"}
-    <div class="flex flex-row justify-between">
-      <img src="/logo.png" alt="Logo" class="w-32 h-32 self-start" />
-      <div class="grid grid-cols-2 gap-2 self-end">
+    <div class="flex flex-row self-end">
+      <div class="grid grid-cols-2 gap-2">
         <Button on:click={() => goto("/submit")}>
           <Upload />
         </Button>

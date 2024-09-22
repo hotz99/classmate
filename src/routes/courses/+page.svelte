@@ -27,7 +27,8 @@
   );
 
   function loadCourse(course: Course) {
-    $selectedCourseStore.set(course);
+    console.log(course);
+    $: selectedCourseStore.set(course);
     goto(`/courses/${course.id}`);
   }
 </script>
