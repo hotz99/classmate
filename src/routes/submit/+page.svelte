@@ -1,52 +1,71 @@
 <script lang="ts">
   import { Input } from "$lib/components/ui/input";
   import { Button } from "$lib/components/ui/button";
-  import * as Tooltip from "$lib/components/ui/tooltip";
+  import * as Popover from "$lib/components/ui/popover";
   import { Pen, Plus, CircleHelp } from "lucide-svelte";
   import { TagList } from "$lib/components";
   import {
     selectedTagStore,
-    hasAddedAbstractStore,
     submissionTitleStore,
+    hasValidSubmissionStore,
   } from "$lib/stores";
 
   let title: string = "";
+  let titleError: string | null = null;
+  const TITLE_MIN_LENGTH = 10;
+
+  let abstractInput: string = "";
+
   let showTags: boolean = false;
   let showAbstract: boolean = false;
 
-  function handleTitleInput(event: InputEvent) {
-    const target = event.target as HTMLInputElement;
-    if (target.value.length >= 5) {
-      submissionTitleStore.set(target.value);
+  let hasValidTitle: boolean = false;
+
+  function validateTitle() {
+    if (title.length < TITLE_MIN_LENGTH) {
+      titleError = `Title must be at least ${TITLE_MIN_LENGTH} characters`;
+    } else {
+      submissionTitleStore.set(title);
+      hasValidTitle = true;
+      titleError = null;
     }
-    title = target.value;
   }
 
   function handleTagSelection(tag: string) {
+    // not sure if we need a store for this
     selectedTagStore.set(tag);
     showTags = false;
-    console.log($selectedTagStore);
   }
+
+  let hasValidAbstract: boolean = false;
+
+  $: hasValidSubmissionStore.set(
+    hasValidTitle && hasValidAbstract && $selectedTagStore,
+  );
 
   function handleAbstractChange(event: InputEvent) {
     const target = event.target as HTMLInputElement;
-    console.log(target.value.length);
     if (target.value.length >= 60) {
-      hasAddedAbstractStore.set(true);
-    } else {
-      hasAddedAbstractStore.set(false);
+      hasValidAbstract = true;
+      console.log("abstract is valid");
     }
   }
 </script>
 
-<div class="flex flex-col space-y-2">
-  <Input
-    class="p-8 text-4xl"
-    placeholder="Title"
-    bind:value={title}
-    on:input={handleTitleInput}
-  />
+<div class="flex flex-col">
+  <div class="flex flex-col">
+    <Input
+      class="py-8 text-4xl"
+      placeholder="Title"
+      bind:value={title}
+      on:blur={validateTitle}
+    />
+    {#if titleError}
+      <p class="text-red-500 text-sm mt-1">{titleError}</p>
+    {/if}
+  </div>
   <Button
+    class="mt-4"
     on:click={() => {
       showTags = !showTags;
       showAbstract = !showAbstract;
@@ -55,35 +74,43 @@
   >
     {#if $selectedTagStore}
       <div class="flex flex-row items-center justify-start">
-        <Pen class="mr-2" />
+        <Pen class="mr-4" />
         {$selectedTagStore}
       </div>
     {:else}
-      <Plus />Add tag
+      <div class="flex flex-row items-center justify-start">
+        <Plus class="mr-4" />
+        Add tag
+      </div>
     {/if}
   </Button>
   {#if showTags}
-    <div class="flex flex-row space-x-2">
+    <div class="flex flex-row space-x-2 mt-4">
       <TagList onSelectTag={handleTagSelection} />
     </div>
   {/if}
   {#if showAbstract && !showTags}
-    <h2 class="text-2xl">Abstract</h2>
-    <Tooltip.Root>
-      <Tooltip.Trigger asChild><CircleHelp class="self-left" /></Tooltip.Trigger
-      >
-      <Tooltip.Content>
-        <p>
-          We require all users to provide an abstract for their notes, minimum
-          60 characters. You will be rated according to your summary.
-        </p>
-      </Tooltip.Content>
-    </Tooltip.Root>
-    <Input
-      class="p-8 text-xl"
-      placeholder="Provide an abstract for your notes"
-      on:input={handleAbstractChange}
-    />
+    <div class="flex flex-col mt-8">
+      <div class="flex items-center justify-between">
+        <h2 class="text-4xl">Abstract</h2>
+        <Popover.Root>
+          <Popover.Trigger><CircleHelp /></Popover.Trigger>
+          <Popover.Content>
+            <p>
+              We require all users to provide an abstract for their notes,
+              minimum 60 characters. You will be rated according to your
+              summary.
+            </p>
+          </Popover.Content>
+        </Popover.Root>
+      </div>
+      <textarea
+        class="mt-2 p-4 text-xl w-full h-full resize-none border rounded"
+        placeholder="Provide an abstract for your notes"
+        bind:value={abstractInput}
+        on:input={handleAbstractChange}
+        rows="12"
+      />
+    </div>
   {/if}
 </div>
-

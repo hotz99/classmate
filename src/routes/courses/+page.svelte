@@ -24,14 +24,18 @@
 
   function loadCourse(course: Course) {
     console.log(course);
-    $: selectedCourseStore.set(course);
+    selectedCourseStore.set(course);
     goto(`/courses/${course.id}`);
   }
 </script>
 
 <div class="mx-auto space-y-10">
   <div class="flex flex-col space-y-2">
-    <Input placeholder="Search ..." bind:value={searchInput} />
+    <Input
+      class="py-8 text-2xl"
+      placeholder="Search"
+      bind:value={searchInput}
+    />
 
     <Tabs.Root class="mx-auto" bind:value={activeYear}>
       <Tabs.List class="flex space-x-4">

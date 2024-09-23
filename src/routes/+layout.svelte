@@ -1,11 +1,6 @@
 <script lang="ts">
   import "../app.css";
-  import {
-    selectedTagStore,
-    hasAddedFileStore,
-    hasAddedAbstractStore,
-    submissionTitleStore,
-  } from "$lib/stores";
+  import { selectedTagStore, hasValidSubmissionStore } from "$lib/stores";
   import { page } from "$app/stores";
   import { goto } from "$app/navigation";
   import { Button } from "$lib/components/ui/button/index";
@@ -24,19 +19,18 @@
 
   function handleUndo() {
     selectedTagStore.set(null);
-    hasAddedFileStore.set(false);
-    hasAddedAbstractStore.set(false);
+    hasValidSubmissionStore.set(false);
     goto("/courses");
   }
 
   let fileInput: HTMLInputElement | null = null;
   let selectedFile: File | null = null;
+  let hasValidFile: boolean = false;
 
   function handleFileChange() {
     if (fileInput && fileInput.files.length > 0) {
       selectedFile = fileInput.files[0];
-      console.log("selected file:", selectedFile);
-      hasAddedFileStore.set(true);
+      hasValidFile = true;
     }
   }
 </script>
@@ -48,8 +42,7 @@
       {#if $page.url.pathname === "/submit"}
         <Button
           on:click={() => goto(`/submit/finish`)}
-          disabled={!($hasAddedFileStore && $hasAddedAbstractStore)}
-          ><ArrowRight /></Button
+          disabled={!$hasValidSubmissionStore}><ArrowRight /></Button
         >
       {/if}
     </div>
@@ -67,9 +60,10 @@
       </div>
     </div>
   {:else if $page.url.pathname === "/submit"}
-    <div class="grid w-full items-center gap-2">
-      <Label class="text-2xl" for="submissionFile">Add file</Label>
+    <div class="grid w-full gap-2 border rounded p-4 bg-primary">
+      <Label class="text-4xl text-white" for="submissionFile">Add file</Label>
       <input
+        class="text-xl text-white"
         id="submissionFile"
         type="file"
         bind:this={fileInput}
