@@ -51,6 +51,26 @@
   }
 </script>
 
+<style>
+  /* ... existing styles ... */
+
+  /* Target specific inputs by their placeholder text or name */
+  input[placeholder="Title"],
+  input[placeholder="search"],
+  input[name="studentId"],
+  input[name="password"] {
+    color: white; /* Set text color to white */
+  }
+
+  /* For placeholder text in these specific inputs */
+  input[placeholder="Title"]::placeholder,
+  input[placeholder="search"]::placeholder,
+  input[name="studentId"]::placeholder,
+  input[name="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+</style>
+
 <div class="flex flex-col">
   <div class="flex flex-col">
     <Input

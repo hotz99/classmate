@@ -28,7 +28,7 @@
   let hasValidFile: boolean = false;
 
   function handleFileChange() {
-    if (fileInput && fileInput.files.length > 0) {
+    if (fileInput && fileInput.files && fileInput.files.length > 0) {
       selectedFile = fileInput.files[0];
       hasValidFile = true;
     }
