@@ -10,7 +10,7 @@
     <h1 class="text-6xl">{$selectedSubmission.title}</h1>
     <p class="text-2xl">by {$selectedSubmission.author.studentId}</p>
     <div class="flex flex-col justify-center items-center space-y-8 mt-8">
-      <h2 class="text-4xl">Abstract</h2>
+      <h2 class="text-4xl">Abstract:</h2>
       <p class="text-2xl border rounded">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
         lacinia varius eros, ac rhoncus metus vestibulum vel. Nam ac enim eros.
