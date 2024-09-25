@@ -38,12 +38,11 @@
   }
 
   let hasValidAbstract: boolean = false;
-
   $: hasValidSubmissionStore.set(
-    hasValidTitle && hasValidAbstract && $selectedTagStore,
+    hasValidTitle && hasValidAbstract && !!$selectedTagStore,
   );
 
-  function handleAbstractChange(event: InputEvent) {
+  function handleAbstractChange(event: Event) {
     const target = event.target as HTMLInputElement;
     if (target.value.length >= 60) {
       hasValidAbstract = true;
@@ -105,7 +104,7 @@
         </Popover.Root>
       </div>
       <textarea
-        class="mt-2 p-4 text-xl w-full h-full resize-none border rounded"
+        class="mt-2 p-4 text-xl w-full h-full resize-none border rounded bg-popover text-popover-foreground"
         placeholder="Provide an abstract for your notes"
         bind:value={abstractInput}
         on:input={handleAbstractChange}
