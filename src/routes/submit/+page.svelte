@@ -2,12 +2,13 @@
   import { Input } from "$lib/components/ui/input";
   import { Button } from "$lib/components/ui/button";
   import * as Popover from "$lib/components/ui/popover";
-  import { Pen, Plus, CircleHelp } from "lucide-svelte";
+  import { Sparkle, Pen, Plus, CircleHelp } from "lucide-svelte";
   import { TagList } from "$lib/components";
   import {
     selectedTagStore,
     submissionTitleStore,
     hasValidSubmissionStore,
+    selectedFileStore,
   } from "$lib/stores";
 
   let title: string = "";
@@ -49,6 +50,44 @@
       hasValidAbstract = true;
       console.log("abstract is valid");
     }
+  }
+
+  function handleAiSummarization() {
+    const file = $selectedFileStore;
+    const reader = new FileReader();
+    reader.onload = async (event) => {
+      console.log("file loaded");
+      if (!event.target || !event.target.result) {
+        return;
+      }
+
+      // https://developer.mozilla.org/en-US/docs/Web/URI/Schemes/data
+      const dataUrl = event.target.result;
+
+      const base64Content = dataUrl.split(",")[1];
+
+      console.log("sending request to gemini handler");
+
+      const response = await fetch("/api/geminiHandler", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fileName: file.name,
+          fileSize: file.size,
+          base64Content: base64Content,
+          mimeType: file.type,
+        }),
+      });
+
+      const result = await response.json();
+      console.log(result.body.geminiResponse);
+      // abstractInput = result.body.geminiResponse;
+    };
+
+    console.log(file);
+    reader.readAsDataURL(file);
   }
 </script>
 
@@ -93,6 +132,7 @@
     <div class="flex flex-col mt-8">
       <div class="flex items-center justify-between">
         <h2 class="text-4xl">Abstract</h2>
+        <Button on:click={handleAiSummarization}><Sparkle /></Button>
         <Popover.Root>
           <Popover.Trigger><CircleHelp /></Popover.Trigger>
           <Popover.Content>

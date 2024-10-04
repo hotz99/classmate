@@ -6,5 +6,7 @@ export const coursesStore = writable<Courses>(courseData as Courses);
 export const selectedCourseStore = writable<Course | null>(null);
 export const selectedSubmissionStore = writable<Submission | null>(null);
 export const selectedTagStore = writable<string | null>(null);
+export const selectedFileStore = writable<string | null>(null);
 export const hasValidSubmissionStore = writable<boolean>(false);
 export const submissionTitleStore = writable<string | null>(null);
+export const abstractStore = writable<string | null>(null);

@@ -1,6 +1,11 @@
 <script lang="ts">
   import "../app.css";
-  import { selectedTagStore, hasValidSubmissionStore } from "$lib/stores";
+  import {
+    selectedTagStore,
+    hasValidSubmissionStore,
+    selectedFileStore,
+    abstractStore,
+  } from "$lib/stores";
   import { page } from "$app/stores";
   import { goto } from "$app/navigation";
   import { Button } from "$lib/components/ui/button/index";
@@ -27,12 +32,25 @@
   let selectedFile: File | null = null;
   let hasValidFile: boolean = false;
 
-  function handleFileChange() {
-    if (fileInput && fileInput.files.length > 0) {
-      selectedFile = fileInput.files[0];
-      hasValidFile = true;
+  const allowedFileTypes = ["application/pdf", "text/plain"];
+
+  const handleFileChange = async (event) => {
+    const input = event.target;
+
+    if (input && !input.files.length) {
+      return;
     }
-  }
+
+    if (!allowedFileTypes.includes(input.files[0].type)) {
+      console.log(input.files[0].type);
+      alert("Invalid file type");
+      return;
+    }
+
+    const file = input.files[0];
+
+    selectedFileStore.set(file);
+  };
 </script>
 
 <main class="flex flex-col min-h-screen p-4 space-y-8">

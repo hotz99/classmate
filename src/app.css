@@ -23,7 +23,6 @@
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
 
-    /*--primary: 222.2 47.4% 11.2%;*/
     --primary: 217 92% 51%;
     --primary-foreground: 0 0% 100%;
 
@@ -81,4 +80,29 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  input, textarea {
+    @apply text-popover-foreground bg-popover;
+    color: white !important;
+    background-color: var(--background) !important;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+}
+
+input[placeholder="Title"],
+input[placeholder="Search"],
+input[placeholder="Student ID"],
+input[type="password"] {
+  color: white !important;
+  background-color: var(--background) !important;
+}
+
+input[placeholder="Title"]::placeholder,
+input[placeholder="Search"]::placeholder,
+input[placeholder="Student ID"]::placeholder,
+input[type="password"]::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
 }
