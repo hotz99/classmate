@@ -46,6 +46,25 @@ function loadCacheFromFile() {
 // load on startup
 loadCacheFromFile();
 
+function extractGeminiResponse(response: string): { summary: string, tag: string } {
+  const regex = /\[SUMMARY: (.+?), TAG: (.+?)\]/;
+
+  const match = response.match(regex);
+
+  if (match) {
+    const summary = match[1].trim();
+    const tag = match[2].trim();
+
+    console.log("summary:", summary);
+    console.log("tag:", tag);
+
+    return { summary, tag };
+  } else {
+    console.log("gemini response does not match expected format");
+    return { summary: "", tag: "" };
+  }
+}
+
 const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_KEY);
 const fileManager = new GoogleAIFileManager(import.meta.env.VITE_GEMINI_KEY);
 
@@ -66,10 +85,16 @@ export const POST: RequestHandler = async ({ request }) => {
     if (filesToGeminiResponses.has(hash)) {
       console.log("cache hit: ", fileName);
 
+      console.log("sleeping for 4 seconds to simulate latency");
+
+      await new Promise((resolve) => {
+        setTimeout(resolve, 4000);
+      });
+
       return new Response(JSON.stringify({
         status: 200,
         body: {
-          geminiResponse: filesToGeminiResponses.get(hash)
+          geminiResponse: extractGeminiResponse(filesToGeminiResponses.get(hash)!)
         },
       }));
     }
@@ -128,7 +153,7 @@ export const POST: RequestHandler = async ({ request }) => {
     return new Response(JSON.stringify({
       status: 200,
       body: {
-        geminiResponse: result.response.text()
+        geminiResponse: extractGeminiResponse(result.response.text())
       },
     }));
   } catch (error) {

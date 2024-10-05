@@ -2,7 +2,7 @@
   import { Input } from "$lib/components/ui/input";
   import { Button } from "$lib/components/ui/button";
   import * as Popover from "$lib/components/ui/popover";
-  import { Sparkle, Pen, Plus, CircleHelp } from "lucide-svelte";
+  import { Sparkle, Pen, Plus, CircleHelp, LoaderCircle } from "lucide-svelte";
   import { TagList } from "$lib/components";
   import {
     selectedTagStore,
@@ -18,7 +18,7 @@
   let abstractInput: string = "";
 
   let showTags: boolean = false;
-  let showAbstract: boolean = false;
+  let showAbstract: boolean = true;
 
   let hasValidTitle: boolean = false;
 
@@ -36,6 +36,7 @@
     // not sure if we need a store for this
     selectedTagStore.set(tag);
     showTags = false;
+    showAbstract = true;
   }
 
   let hasValidAbstract: boolean = false;
@@ -52,7 +53,11 @@
     }
   }
 
+  let awaitingGeminiResponse: boolean = false;
+
   function handleAiSummarization() {
+    awaitingGeminiResponse = true;
+
     const file = $selectedFileStore;
     const reader = new FileReader();
     reader.onload = async (event) => {
@@ -82,8 +87,11 @@
       });
 
       const result = await response.json();
+      awaitingGeminiResponse = false;
       console.log(result.body.geminiResponse);
-      // abstractInput = result.body.geminiResponse;
+      abstractInput = result.body.geminiResponse.summary;
+      hasValidAbstract = true;
+      selectedTagStore.set(result.body.geminiResponse.tag);
     };
 
     console.log(file);
@@ -132,7 +140,9 @@
     <div class="flex flex-col mt-8">
       <div class="flex items-center justify-between">
         <h2 class="text-4xl">Abstract</h2>
-        <Button on:click={handleAiSummarization}><Sparkle /></Button>
+        <Button on:click={handleAiSummarization} disabled={!$selectedFileStore}
+          ><Sparkle /></Button
+        >
         <Popover.Root>
           <Popover.Trigger><CircleHelp /></Popover.Trigger>
           <Popover.Content>
@@ -144,13 +154,23 @@
           </Popover.Content>
         </Popover.Root>
       </div>
-      <textarea
-        class="mt-2 p-4 text-xl w-full h-full resize-none border rounded"
-        placeholder="Provide an abstract for your notes"
-        bind:value={abstractInput}
-        on:input={handleAbstractChange}
-        rows="12"
-      />
+      {#if awaitingGeminiResponse}
+        <svg
+          class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <LoaderCircle />
+        </svg>
+      {:else}
+        <textarea
+          class="mt-2 p-4 text-xl w-full h-full resize-none border rounded"
+          placeholder="Provide an abstract for your notes"
+          bind:value={abstractInput}
+          on:input={handleAbstractChange}
+          rows="12"
+        />
+      {/if}
     </div>
   {/if}
 </div>

@@ -11,6 +11,7 @@
   import { Button } from "$lib/components/ui/button/index";
   import { Label } from "$lib/components/ui/label";
   import {
+    X,
     Upload,
     ArrowRight,
     Undo2,
@@ -28,16 +29,13 @@
     goto("/courses");
   }
 
-  let fileInput: HTMLInputElement | null = null;
-  let selectedFile: File | null = null;
-  let hasValidFile: boolean = false;
-
   const allowedFileTypes = ["application/pdf", "text/plain"];
 
-  const handleFileChange = async (event) => {
+  async function handleFileChange(event) {
     const input = event.target;
 
     if (input && !input.files.length) {
+      selectedFileStore.set(null);
       return;
     }
 
@@ -50,7 +48,12 @@
     const file = input.files[0];
 
     selectedFileStore.set(file);
-  };
+  }
+
+  function clearSubmittedFile() {
+    selectedFileStore.set(null);
+    document.getElementById("submissionFile").value = "";
+  }
 </script>
 
 <main class="flex flex-col min-h-screen p-4 space-y-8">
@@ -78,15 +81,23 @@
       </div>
     </div>
   {:else if $page.url.pathname === "/submit"}
-    <div class="grid w-full gap-2 border rounded p-4 bg-primary">
+    <div class="flex flex-col space-y-2 border rounded p-4 bg-primary">
       <Label class="text-4xl text-white" for="submissionFile">Add file</Label>
-      <input
-        class="text-xl text-white"
-        id="submissionFile"
-        type="file"
-        bind:this={fileInput}
-        on:change={handleFileChange}
-      />
+      <div class="flex flex-row">
+        <input
+          class="text-xl text-white flex-grow"
+          style="max-width: 80%;"
+          id="submissionFile"
+          type="file"
+          bind:value={$selectedFileStore}
+          on:change={handleFileChange}
+        />
+        {#if $selectedFileStore}
+          <Button on:click={clearSubmittedFile}>
+            <X />
+          </Button>
+        {/if}
+      </div>
     </div>
   {/if}
 </main>
