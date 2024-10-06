@@ -16,5 +16,7 @@
   <img src="/logo.png" alt="Logo" class="mb-16 mx-auto" />
   <Input placeholder="Student ID" bind:value={studentId} />
   <Input placeholder="Password" type="password" bind:value={password} />
-  <Button class="p-6 text-xl" on:click={signIn}>Sign In</Button>
+  <Button class="p-6 text-xl bg-secondary text-primary" on:click={signIn}
+    >Sign In</Button
+  >
 </div>

@@ -2,20 +2,31 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { GoogleAIFileManager } from "@google/generative-ai/server";
 import type { RequestHandler } from "@sveltejs/kit";
 import { Buffer } from "buffer";
-import { readFileSync, writeFileSync, existsSync } from "fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
 import { join } from "path";
 import courseData from "$lib/data/courses.json";
 import XXH from "xxhashjs";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const TMP_DIR = join(__dirname, "tmp");
+
+if (!existsSync(TMP_DIR)) {
+  mkdirSync(TMP_DIR, { recursive: true });
+}
 
 const courseNames: string[] = Object.values(courseData)
   .flatMap((year) => [...year.semester1, ...year.semester2])
   .map((course) => course.name);
 
 const MAX_SUMMARY_CHARS = 120;
-const PROMPT_TEXT = `Summarize the document to ${MAX_SUMMARY_CHARS} characters. Classify the attached file content with one of the available tags: ${courseNames}. Format your response as [SUMMARY: ..., TAG: ...]`;
+const INITIAL_PROMPT_TEXT = `Summarize the document to ${MAX_SUMMARY_CHARS} characters. Classify the attached file content with one of the available tags: ${courseNames}. Format your response as [SUMMARY: ..., TAG: ...]`;
 
-// persisted cache
-const cacheFilePath = join("/tmp/", "cache.json");
+// persistent cache
+const cacheFilePath = join(TMP_DIR, "cache.json");
 // cache
 let filesToGeminiResponses = new Map<string, string>();
 
@@ -39,14 +50,14 @@ function loadCacheFromFile() {
       console.error("error loading cache:", error);
     }
   } else {
-    console.log("No cache file found. Starting with an empty cache.");
+    console.log("no cache file found. starting with an empty cache.");
   }
 }
 
 // load on startup
 loadCacheFromFile();
 
-function extractGeminiResponse(response: string): { summary: string, tag: string } {
+function decodeGeminiResponse(response: string): { summary: string, tag: string } {
   const regex = /\[SUMMARY: (.+?), TAG: (.+?)\]/;
 
   const match = response.match(regex);
@@ -54,9 +65,6 @@ function extractGeminiResponse(response: string): { summary: string, tag: string
   if (match) {
     const summary = match[1].trim();
     const tag = match[2].trim();
-
-    console.log("summary:", summary);
-    console.log("tag:", tag);
 
     return { summary, tag };
   } else {
@@ -66,12 +74,40 @@ function extractGeminiResponse(response: string): { summary: string, tag: string
 }
 
 const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_KEY);
+const model = genAI.getGenerativeModel({
+  model: "gemini-1.5-flash",
+});
 const fileManager = new GoogleAIFileManager(import.meta.env.VITE_GEMINI_KEY);
 
 export const POST: RequestHandler = async ({ request }) => {
   const totalResponseTimeStart = Date.now();
 
-  const { fileName, fileSize, base64Content, mimeType } = await request.json();
+  const { fileName, fileSize, base64Content, mimeType, adjustVerbosity, summaryToBeAdjusted } = await request.json();
+
+  // if set no other fields besides summaryToBeAdjusted are expected
+  if (adjustVerbosity) {
+    try {
+      const regenResponseTimeStart = Date.now();
+      const response = await model.generateContent(`Make the summary more ${adjustVerbosity == 1 ? "verbose" : "concise"}: "${summaryToBeAdjusted}"`);
+
+      console.log(`regenerating summary took ${Date.now() - regenResponseTimeStart}ms (${adjustVerbosity == 1 ? "increased" : "decreased"} verbosity)`);
+
+      return new Response(JSON.stringify({
+        status: 200,
+        body: {
+          newSummary: (response.response.text())
+        },
+      }));
+    } catch (error) {
+      console.error("error regenerating summary:", error);
+      return new Response(JSON.stringify({
+        status: 500,
+        body: {
+          error: error.message,
+        },
+      }));
+    }
+  }
 
   console.log(`geminiHandler received file ${fileName} with MIME type ${mimeType}`);
 
@@ -81,20 +117,13 @@ export const POST: RequestHandler = async ({ request }) => {
 
     const hash = XXH.h32(decodedFile, 0xDEADBEEF).toString(16);
 
-    console.log("cache: ", filesToGeminiResponses);
     if (filesToGeminiResponses.has(hash)) {
       console.log("cache hit: ", fileName);
-
-      console.log("sleeping for 4 seconds to simulate latency");
-
-      await new Promise((resolve) => {
-        setTimeout(resolve, 4000);
-      });
 
       return new Response(JSON.stringify({
         status: 200,
         body: {
-          geminiResponse: extractGeminiResponse(filesToGeminiResponses.get(hash)!)
+          geminiResponse: decodeGeminiResponse(filesToGeminiResponses.get(hash)!)
         },
       }));
     }
@@ -105,18 +134,18 @@ export const POST: RequestHandler = async ({ request }) => {
       }), { status: 400 });
     }
 
-    const filePath = join("/tmp/", fileName);
+    const filePath = join(TMP_DIR, fileName);
     writeFileSync(filePath, decodedFile);
 
-    console.log(`File saved to ${filePath}`);
+    console.log(`file saved to ${filePath}`);
 
     const geminiUploadFileStart = Date.now();
 
     const uploadResponse = await fileManager.uploadFile(
       filePath,
       {
-        mimeType, // Example: "application/pdf"
-        displayName: fileName, // Example: "Gemini 1.5 PDF"
+        mimeType,
+        displayName: fileName,
       }
     );
 
@@ -126,9 +155,7 @@ export const POST: RequestHandler = async ({ request }) => {
       `uploaded file ${uploadResponse.file.displayName} as: ${uploadResponse.file.uri}`
     );
 
-    const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash",
-    });
+
 
     const geminiResponseTimeStart = Date.now();
 
@@ -139,7 +166,7 @@ export const POST: RequestHandler = async ({ request }) => {
           fileUri: uploadResponse.file.uri,
         },
       },
-      { text: PROMPT_TEXT },
+      { text: INITIAL_PROMPT_TEXT },
     ]);
 
     console.log(`gemini took ${Date.now() - geminiResponseTimeStart}ms`);
@@ -153,7 +180,7 @@ export const POST: RequestHandler = async ({ request }) => {
     return new Response(JSON.stringify({
       status: 200,
       body: {
-        geminiResponse: extractGeminiResponse(result.response.text())
+        geminiResponse: decodeGeminiResponse(result.response.text())
       },
     }));
   } catch (error) {
@@ -166,4 +193,3 @@ export const POST: RequestHandler = async ({ request }) => {
     }));
   }
 };
-

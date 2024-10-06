@@ -2,7 +2,14 @@
   import { Input } from "$lib/components/ui/input";
   import { Button } from "$lib/components/ui/button";
   import * as Popover from "$lib/components/ui/popover";
-  import { Sparkle, Pen, Plus, CircleHelp, LoaderCircle } from "lucide-svelte";
+  import {
+    Sparkle,
+    Pen,
+    Plus,
+    Minus,
+    CircleHelp,
+    LoaderCircle,
+  } from "lucide-svelte";
   import { TagList } from "$lib/components";
   import {
     selectedTagStore,
@@ -50,6 +57,8 @@
     if (target.value.length >= 60) {
       hasValidAbstract = true;
       console.log("abstract is valid");
+    } else {
+      hasValidAbstract = false;
     }
   }
 
@@ -97,6 +106,25 @@
     console.log(file);
     reader.readAsDataURL(file);
   }
+
+  async function sendVerbosityAdjustmentRequest(increaseVerbosity: boolean) {
+    const response = await fetch("/api/geminiHandler", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        adjustVerbosity: increaseVerbosity ? 1 : -1,
+        summaryToBeAdjusted: abstractInput,
+      }),
+    });
+
+    const result = await response.json();
+
+    console.log("new summary has length ", result.body.newSummary.length);
+
+    abstractInput = result.body.newSummary;
+  }
 </script>
 
 <div class="flex flex-col">
@@ -121,7 +149,7 @@
   >
     {#if $selectedTagStore}
       <div class="flex flex-row items-center justify-start">
-        <Pen class="mr-4" />
+        <Pen class="mr-2" />
         {$selectedTagStore}
       </div>
     {:else}
@@ -156,7 +184,7 @@
       </div>
       {#if awaitingGeminiResponse}
         <svg
-          class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+          class="animate-spin -ml-1 mr-3 h-15 w-15 text-white"
           fill="none"
           viewBox="0 0 24 24"
         >
@@ -171,6 +199,18 @@
           rows="12"
         />
       {/if}
+      <div class="flex flex-row space-x-2 mt-4">
+        <Button
+          class="border rounded"
+          on:click={() => sendVerbosityAdjustmentRequest(false)}
+          disabled={!hasValidAbstract}><Minus class="mr-2" />Verbose</Button
+        >
+        <Button
+          class="border rounded"
+          on:click={() => sendVerbosityAdjustmentRequest(true)}
+          disabled={!hasValidAbstract}><Plus class="mr-2" />Verbose</Button
+        >
+      </div>
     </div>
   {/if}
 </div>
