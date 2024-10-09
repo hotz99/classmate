@@ -108,6 +108,7 @@
   }
 
   async function sendVerbosityAdjustmentRequest(increaseVerbosity: boolean) {
+    awaitingGeminiResponse = true;
     const response = await fetch("/api/geminiHandler", {
       method: "POST",
       headers: {
@@ -120,6 +121,8 @@
     });
 
     const result = await response.json();
+
+    awaitingGeminiResponse = false;
 
     console.log("new summary has length ", result.body.newSummary.length);
 
