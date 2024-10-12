@@ -13,7 +13,7 @@
 </script>
 
 <div class="flex flex-col space-y-4 p-4 self-center">
-  <img src="/logo.png" alt="Logo" class="mb-16 mx-auto" />
+  <img src="/logo.png" alt="Logo" class="mb-16 mx-auto w-80 h-auto" />
   <Input placeholder="Student ID" bind:value={studentId} />
   <Input placeholder="Password" type="password" bind:value={password} />
   <Button class="p-6 text-xl bg-secondary text-primary" on:click={signIn}
