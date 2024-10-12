@@ -26,7 +26,6 @@
 		"@google/generative-ai": "^0.20.0",
 		"bits-ui": "^0.21.15",
 		"clsx": "^2.1.1",
-		"fs": "^0.0.1-security",
 		"install": "^0.13.0",
 		"lucide-svelte": "^0.441.0",
 		"npm": "^10.8.3",
