@@ -6,16 +6,11 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
 import { join } from "path";
 import courseData from "$lib/data/courses.json";
 import XXH from "xxhashjs";
-import { dirname } from "path";
-import { fileURLToPath } from "url";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const tmpDir = join("/tmp", "geminiHandler");
 
-const TMP_DIR = join(__dirname, "tmp");
-
-if (!existsSync(TMP_DIR)) {
-  mkdirSync(TMP_DIR, { recursive: true });
+if (!existsSync(tmpDir)) {
+  mkdirSync(tmpDir, { recursive: true });
 }
 
 const courseNames: string[] = Object.values(courseData)
@@ -26,7 +21,7 @@ const MAX_SUMMARY_CHARS = 120;
 const INITIAL_PROMPT_TEXT = `Summarize the document to ${MAX_SUMMARY_CHARS} characters. Classify the attached file content with one of the available tags: ${courseNames}. Return object literal: {"summary": string, "tag": string}`;
 
 // persistent cache
-const cacheFilePath = join(TMP_DIR, "cache.json");
+const cacheFilePath = join(tmpDir, "cache.json");
 // cache
 let filesToGeminiResponses = new Map<string, string>();
 
@@ -120,7 +115,7 @@ export const POST: RequestHandler = async ({ request }) => {
       }), { status: 400 });
     }
 
-    const filePath = join(TMP_DIR, fileName);
+    const filePath = join(tmpDir, fileName);
     writeFileSync(filePath, decodedFile);
 
     console.log(`file saved to ${filePath}`);
