@@ -97,10 +97,9 @@
 
       const result = await response.json();
       awaitingGeminiResponse = false;
-      console.log(result.body.geminiResponse);
-      abstractInput = result.body.geminiResponse.summary;
+      abstractInput = result.body.summary;
       hasValidAbstract = true;
-      selectedTagStore.set(result.body.geminiResponse.tag);
+      selectedTagStore.set(result.body.tag);
     };
 
     console.log(file);
@@ -187,7 +186,7 @@
       </div>
       {#if awaitingGeminiResponse}
         <svg
-          class="animate-spin -ml-1 mr-3 h-15 w-15 text-white"
+          class="animate-spin m-8 h-14 w-14 text-white"
           fill="none"
           viewBox="0 0 24 24"
         >

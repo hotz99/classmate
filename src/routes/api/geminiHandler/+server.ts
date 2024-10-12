@@ -23,7 +23,7 @@ const courseNames: string[] = Object.values(courseData)
   .map((course) => course.name);
 
 const MAX_SUMMARY_CHARS = 120;
-const INITIAL_PROMPT_TEXT = `Summarize the document to ${MAX_SUMMARY_CHARS} characters. Classify the attached file content with one of the available tags: ${courseNames}. Format your response as [SUMMARY: ..., TAG: ...]`;
+const INITIAL_PROMPT_TEXT = `Summarize the document to ${MAX_SUMMARY_CHARS} characters. Classify the attached file content with one of the available tags: ${courseNames}. Return object literal: {"summary": string, "tag": string}`;
 
 // persistent cache
 const cacheFilePath = join(TMP_DIR, "cache.json");
@@ -56,22 +56,6 @@ function loadCacheFromFile() {
 
 // load on startup
 loadCacheFromFile();
-
-function decodeGeminiResponse(response: string): { summary: string, tag: string } {
-  const regex = /\[SUMMARY: (.+?), TAG: (.+?)\]/;
-
-  const match = response.match(regex);
-
-  if (match) {
-    const summary = match[1].trim();
-    const tag = match[2].trim();
-
-    return { summary, tag };
-  } else {
-    console.log("gemini response does not match expected format");
-    return { summary: "", tag: "" };
-  }
-}
 
 const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_KEY);
 const model = genAI.getGenerativeModel({
@@ -120,10 +104,12 @@ export const POST: RequestHandler = async ({ request }) => {
     if (filesToGeminiResponses.has(hash)) {
       console.log("cache hit: ", fileName);
 
+      const responseJson = JSON.parse(filesToGeminiResponses.get(hash));
       return new Response(JSON.stringify({
         status: 200,
         body: {
-          geminiResponse: decodeGeminiResponse(filesToGeminiResponses.get(hash)!)
+          summary: responseJson.summary,
+          tag: responseJson.tag
         },
       }));
     }
@@ -155,8 +141,6 @@ export const POST: RequestHandler = async ({ request }) => {
       `uploaded file ${uploadResponse.file.displayName} as: ${uploadResponse.file.uri}`
     );
 
-
-
     const geminiResponseTimeStart = Date.now();
 
     const result = await model.generateContent([
@@ -172,15 +156,21 @@ export const POST: RequestHandler = async ({ request }) => {
     console.log(`gemini took ${Date.now() - geminiResponseTimeStart}ms`);
 
     console.log("adding to cache: ", fileName);
-    filesToGeminiResponses.set(hash, result.response.text());
+    // because gemini adds code blocks around the JSON response
+    // even when told not to
+    const cleanedResponse = result.response.text().replace(/```json\n|```/g, '');
+    filesToGeminiResponses.set(hash, cleanedResponse);
     saveCacheToFile();
 
     console.log(`total response time: ${Date.now() - totalResponseTimeStart}ms`);
 
+    const responseJson = JSON.parse(cleanedResponse);
+
     return new Response(JSON.stringify({
       status: 200,
       body: {
-        geminiResponse: decodeGeminiResponse(result.response.text())
+        summary: responseJson.summary,
+        tag: responseJson.tag
       },
     }));
   } catch (error) {
