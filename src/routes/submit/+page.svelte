@@ -170,9 +170,6 @@
     <div class="flex flex-col mt-8">
       <div class="flex items-center justify-between">
         <h2 class="text-4xl">Abstract</h2>
-        <Button on:click={handleAiSummarization} disabled={!$selectedFileStore}
-          ><Sparkle /></Button
-        >
         <Popover.Root>
           <Popover.Trigger><CircleHelp /></Popover.Trigger>
           <Popover.Content>
@@ -201,18 +198,6 @@
           rows="12"
         />
       {/if}
-      <div class="flex flex-row space-x-2 mt-4">
-        <Button
-          class="border rounded"
-          on:click={() => sendVerbosityAdjustmentRequest(false)}
-          disabled={!hasValidAbstract}><Minus class="mr-2" />Verbose</Button
-        >
-        <Button
-          class="border rounded"
-          on:click={() => sendVerbosityAdjustmentRequest(true)}
-          disabled={!hasValidAbstract}><Plus class="mr-2" />Verbose</Button
-        >
-      </div>
     </div>
   {/if}
 </div>
