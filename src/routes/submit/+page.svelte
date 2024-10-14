@@ -169,13 +169,16 @@
   {#if showAbstract && !showTags}
     <div class="flex flex-col mt-8">
       <div class="flex items-center justify-between">
-        <h2 class="text-4xl">Abstract</h2>
+        <h2 class="text-4xl">Summary</h2>
+        <Button on:click={handleAiSummarization} disabled={!$selectedFileStore}
+          ><Sparkle /></Button
+        >
         <Popover.Root>
           <Popover.Trigger><CircleHelp /></Popover.Trigger>
           <Popover.Content>
             <p>
-              We require all users to provide an abstract for their notes,
-              minimum 60 characters. You will be rated according to your
+              We require all users to provide a summary for their notes, minimum
+              60 characters. You will be rated according to the quality of this
               summary.
             </p>
           </Popover.Content>
@@ -192,12 +195,24 @@
       {:else}
         <textarea
           class="mt-2 p-4 text-xl w-full h-full resize-none border rounded"
-          placeholder="Provide an abstract for your notes"
+          placeholder="Provide a summary for your notes"
           bind:value={abstractInput}
           on:input={handleAbstractChange}
           rows="12"
         />
       {/if}
+      <div class="flex flex-row space-x-2 mt-4">
+        <Button
+          class="border rounded"
+          on:click={() => sendVerbosityAdjustmentRequest(false)}
+          disabled={!hasValidAbstract}><Minus class="mr-2" />Verbose</Button
+        >
+        <Button
+          class="border rounded"
+          on:click={() => sendVerbosityAdjustmentRequest(true)}
+          disabled={!hasValidAbstract}><Plus class="mr-2" />Verbose</Button
+        >
+      </div>
     </div>
   {/if}
 </div>
