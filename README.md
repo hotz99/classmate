@@ -1,22 +1,15 @@
 # Classmate
 
-Classmate is a prototype of a platform where students submit and share their course work. It was a course project for Intelligent User Interfaces. The task was to design a product prototype with an AI feature that makes the user experience better.
+Classmate is a prototype of a platform where students share notes for their courses. It was a course project for Intelligent User Interfaces. The task was to design a product prototype with an AI feature that makes the user experience better.
 
 ## AI feature
 
-When a student submits a file, Gemini reads the file. Then it:
+When a student uploads notes, Gemini reads the file. Then it:
 
 - Writes a summary (abstract) of the submission.
 - Suggests a tag for the submission.
 
 The student can make the summary more verbose or more concise with one click.
-
-## Branches
-
-| Branch | Description |
-|---|---|
-| `master` | Prototype with the AI feature |
-| `no_ai` | Prototype without the AI feature (for comparison in user tests) |
 
 ## Stack
 
